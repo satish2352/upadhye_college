@@ -6,14 +6,14 @@
                 <div class="col-lg-6 col-xl-2 col-md-6 col-6">
                     <div class="logo">
                         <a href="{{url('/')}}">
-                            <img class="logo-light" src="{{ asset('website/assets/images/logo/collagelogo.png')}}" alt="Site Logo">
+                            <img class="logo-light" src="{{ asset('website/assets/images/logo/collegelogo.png')}}" alt="Site Logo">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-8 d-none d-xl-block">
                     <nav class="mainmenu-nav d-none d-lg-block">
                         <ul class="mainmenu">
-                            <li class="has-droupdown"><a href="{{url('/')}}">Home</a>
+                            <li class=""><a href="{{url('/')}}">Home</a>
                                 {{-- <ul class="submenu">
                                     <li><a href="index-one.html">Home 1</a></li>
                                     <li><a href="index-two.html">Home 2</a></li>

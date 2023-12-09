@@ -7,8 +7,8 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="edu-footer-widget">
                                 <div class="logo">
-                                    <a href="index-2.html">
-                                        <img class="logo-light" src="{{ asset('website/assets/images/logo/collagelogo.png')}}" alt="Site Logo">
+                                    <a href="{{url('/')}}">
+                                        <img class="logo-light" src="{{ asset('website/assets/images/logo/collegelogo_w.png')}}" alt="Site Logo">
                                     </a>
                                 </div>
                                 <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
@@ -59,11 +59,12 @@
                                 <div class="inner">
                                     <div class="widget-information">
                                         <ul class="information-list">
-                                            <li><i class="icon-map-pin-line"></i>275 Quadra Street Victoria Road, New York
+                                            <li><i class="icon-map-pin-line"></i>Near Bafna Warehouse, Pimpri Sayyed, Ozar Road, Nashik - 422 003.
                                             </li>
-                                            <li><i class="icon-phone-fill"></i><a href="tel:+1(237)382-2839">+ 1 (237) 382-2839</a></li>
-                                            <li><i class="icon-phone-fill"></i><a href="tel:+1(237)382-2840">+ 1 (237) 382-2840</a></li>
-                                            <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:yourmailaddress@example.com">yourmailaddress@example.com</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel::+91 7888043137">+91 7888043137</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel:+91 7722071300">+91 7722071300</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel:+91 9822046000">+91 9822046000</a></li>
+                                            <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:upadhyecampus@gmail.com">upadhyecampus@gmail.com</a></li>
                                         </ul>
                                     </div>
                                 </div>

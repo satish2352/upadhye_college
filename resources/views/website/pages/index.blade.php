@@ -20,10 +20,10 @@
                         <div class="col-lg-6">
                             <div class="banner-image">
                                 <div class="banner-main-image">
-                                    <img class="img-01" data-sal-delay="150" data-sal="fade" data-sal-duration="800" src="{{ asset('website/assets/images/banner/banner-03/Group-1.png')}}" alt="Banner Images" />
+                                    <img class="img-01" data-sal-delay="150" data-sal="fade" data-sal-duration="800" src="{{ asset('website/assets/images/banner/banner-03/Group_1.png')}}" alt="Banner Images" />
                                 </div>
-                                <img class="img-02" data-sal-delay="150" data-sal="fade" data-sal-duration="800" src="{{ asset('website/assets/images/banner/banner-03/image-02.png')}}" alt="Banner Images" />
-                                <img class="img-03" data-sal-delay="150" data-sal="fade" data-sal-duration="800" src="{{ asset('website/assets/images/banner/banner-03/image-03.png')}}" alt="Banner Images" />
+                                <img class="img-02" data-sal-delay="150" data-sal="fade" data-sal-duration="800" src="{{ asset('website/assets/images/banner/banner-03/Group_3.png')}}" alt="Banner Images" />
+                                <img class="img-03" data-sal-delay="150" data-sal="fade" data-sal-duration="800" src="{{ asset('website/assets/images/banner/banner-03/Group_4.png')}}" alt="Banner Images" />
                             </div>
                         </div>
                     </div>
@@ -229,9 +229,9 @@
                 <div class="row g-lg-5 g-md-5 g-sm-5">
                     <div class="col-lg-12 col-xl-6">
                         <div class="gallery-wrapper">
-                            <img class="image-1" src="{{ asset('website/assets/images/about/about-05/about-group-01.jpg')}}" alt="About Images">
-                            <img class="image-2" src="{{ asset('website/assets/images/about/about-05/about-group-02.jpg')}}" alt="About Images">
-                            <img class="image-3" data-parallax='{"x": 0, "y": -120}' src="{{ asset('website/assets/images/about/about-05/about-group-03.jpg')}}" alt="About Images">
+                            <img class="gallery-wrapper" src="{{ asset('website/assets/images/about/about-05/girlsactivety.png')}}" alt="About Images">
+                            <img class="image-2" src="{{ asset('website/assets/images/about/about-05/girl.png')}}" alt="About Images">
+                            <img class="image-3" data-parallax='{"x": 0, "y": -120}' src="{{ asset('website/assets/images/about/about-05/girls.png')}}" alt="About Images">
                         </div>
                     </div>
                     <div class="col-lg-12 col-xl-6">
@@ -400,7 +400,7 @@
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/course-01.jpg')}}" alt="Course Meta">
+                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/neet.jpg')}}" alt="Course Meta">
                                         </a>
                                         <div class="top-position status-group left-top">
                                             {{-- <span class="eduvibe-status status-01">Intermediate</span> --}}
@@ -445,7 +445,7 @@
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/course-02.jpg')}}" alt="Course Meta">
+                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/jee.jpg')}}" alt="Course Meta">
                                         </a>
                                         <div class="top-position status-group left-top">
                                             {{-- <span class="eduvibe-status status-01">Advanced</span> --}}
@@ -493,7 +493,7 @@
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/course-03.jpg')}}" alt="Course Meta">
+                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/jee_mains_advance.jpg')}}" alt="Course Meta">
                                         </a>
                                         <div class="top-position status-group left-top">
                                             {{-- <span class="eduvibe-status status-01">Basic</span> --}}
@@ -714,21 +714,21 @@
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="workshop-inner">
                             <div class="section-title text-white" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <span class="pre-title">Greeting</span>
+                                {{-- <span class="pre-title">Greeting</span> --}}
                                 <h3 class="title">Welcome</h3>
                             </div>
                             <p class="description" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">We welcome you to Upadhye College, a place where academic excellence meets vibrant campus life. We are a community of passionate learners, dedicated faculty, and supportive staff who are committed to helping you reach your full potential.</p>
                             <div class="read-more-btn" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
-                                <a class="edu-btn btn-white" href="event-list.html">More Upcomming Workshop<i class="icon-arrow-right-line-right"></i></a>
+                                {{-- <a class="edu-btn btn-white" href="event-list.html">More Upcomming Workshop<i class="icon-arrow-right-line-right"></i></a> --}}
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2">
                         <div class="thumbnail video-popup-wrapper">
-                            <img class="radius-small w-100" src="{{ asset('website/assets/images/videopopup/video-popup-bg-02.jpg')}}" alt="About Image">
-                            <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation position-to-top video-popup-activation color-secondary size-60">
+                            <img class="radius-small w-100" src="{{ asset('website/assets/images/videopopup/Group_5.png')}}" alt="About Image">
+                            {{-- <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation position-to-top video-popup-activation color-secondary size-60">
                                 <span class="play-icon"></span>
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 </div>
@@ -749,7 +749,7 @@
         <!-- End Video Area  -->
 
         <!-- Start Accordion Area  -->
-        <div class="edu-accordion-area eduvibe-home-three-accordion accordion-shape-1 edu-section-gap bg-color-white">
+        {{-- <div class="edu-accordion-area eduvibe-home-three-accordion accordion-shape-1 edu-section-gap bg-color-white">
             <div class="container eduvibe-animated-shape">
                 <div class="row g-5">
                     <div class="col-lg-6 gallery-wrapper">
@@ -854,7 +854,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End Accordion Area  -->
 
       
