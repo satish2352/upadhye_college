@@ -224,12 +224,13 @@
             </div>
         </div>
 
+{{--girls hostel  --}}
         <div class="home-three-about edu-about-area about-style-4 bg-color-white edu-section-gapBottom">
             <div class="container eduvibe-animated-shape">
                 <div class="row g-lg-5 g-md-5 g-sm-5">
                     <div class="col-lg-12 col-xl-6">
                         <div class="gallery-wrapper">
-                            <img class="gallery-wrapper" src="{{ asset('website/assets/images/about/about-05/girlsactivety.png')}}" alt="About Images">
+                            <img class="image-1" src="{{ asset('website/assets/images/about/about-05/girlsactivety.png')}}" alt="About Images">
                             <img class="image-2" src="{{ asset('website/assets/images/about/about-05/girl.png')}}" alt="About Images">
                             <img class="image-3" data-parallax='{"x": 0, "y": -120}' src="{{ asset('website/assets/images/about/about-05/girls.png')}}" alt="About Images">
                         </div>
@@ -301,7 +302,7 @@
                 </div>
             </div>
         </div>
-
+{{-- /girls hostel --}}
 
         <!-- Start Counterup Area  -->
         <div class="edu-counterup-and-course-area">
@@ -1210,7 +1211,7 @@
                     <div class="col-lg-12">
                         <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <span class="pre-title">Upcomming Event</span>
-                            <h3 class="title">Let’s Join Our Community</h3>
+                            <h3 class="title">College Campus Life</h3>
                         </div>
                     </div>
                 </div>
@@ -1221,30 +1222,246 @@
                             <div class="inner">
                                 <div class="thumbnail">
                                     <a href="event-details.html">
-                                        <img src="{{ asset('website/assets/images/event/event-02/event-01.jpg')}}" alt="Event Images">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE.jpg')}}" alt="Event Images">
                                     </a>
                                     <div class="top-position status-group left-top">
-                                        <span class="eduvibe-status status-06">04 Dec 2023</span>
-                                    </div>
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
                                 </div>
                                 <div class="content">
-                                    <ul class="event-meta">
-                                        <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li>
-                                    </ul>
-                                    <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a>
-                                    </h5>
-                                    <div class="read-more-btn">
-                                        <a class="btn-transparent" href="course-details.html">Get Ticket<i
-                                                class="icon-arrow-right-line-right"></i></a>
-                                    </div>
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- End Event Grid   -->
-
                     <!-- Start Event Grid   -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_1.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_2.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_3.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_4.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                {{-- class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}} 
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_5.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_6.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_7.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-event event-grid-1 bg-shade radius-small">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="event-details.html">
+                                        <img src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_8.jpg')}}" alt="Event Images">
+                                    </a>
+                                    <div class="top-position status-group left-top"> --}}
+                                        {{-- <span class="eduvibe-status status-06">04 Dec 2023</span> --}}
+                                    {{-- </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="event-meta"> --}}
+                                        {{-- <li><i class="icon-map-pin-line"></i>Alpaca Way Anaheim, CA 92805</li> --}}
+                                    {{-- </ul> --}}
+                                    {{-- <h5 class="title"><a href="event-details.html">Innovation & Technological Entrepreneurship Team</a> --}}
+                                    {{-- </h5>
+                                    <div class="read-more-btn"> --}}
+                                        {{-- <a class="btn-transparent" href="course-details.html">Get Ticket<i
+                                                class="icon-arrow-right-line-right"></i></a> --}}
+                                    {{-- </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <!-- End Event Grid   -->
+                  
+                    <!-- Start Event Grid   -->
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
                         <div class="edu-event event-grid-1 bg-shade radius-small">
                             <div class="inner">
                                 <div class="thumbnail">
@@ -1267,11 +1484,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- End Event Grid   -->
 
                     <!-- Start Event Grid   -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                    {{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
                         <div class="edu-event event-grid-1 bg-shade radius-small">
                             <div class="inner">
                                 <div class="thumbnail">
@@ -1295,10 +1512,260 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- End Event Grid   -->
+    {{-- </div> --}} 
+{{-- college campus photo --}}
+<div class="edu-gallery-grid-area masonary-wrapper-activation edu-section-gap bg-image bg-image--25 overflow-hidden">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <span class="pre-title">Upcomming Event</span>
+                            <h3 class="title">College Campus Life</h3>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="col-lg-6">
+                    {{-- <div class="button-group isotop-filter filters-button-group d-flex justify-content-start justify-content-lg-end"> --}}
+                        {{-- <button data-filter="*" class="is-checked"><span class="filter-text">All</span></button>
+                        <button data-filter=".cat--1"><span class="filter-text">Trending</span></button>
+                        <button data-filter=".cat--2"><span class="filter-text">Popularity</span></button>
+                        <button data-filter=".cat--3"><span class="filter-text">Featured</span></button> --}}
+                    {{-- </div> --}}
+                </div>
+            </div>
 
+            <div class="row g-5 mt--5">
+                <div class="col-12">
+                    <div class="gallery-grid-wrapper grid-metro3 mesonry-list overflow-hidden" id="animated-thumbnials">
+                        <div class="resizer"></div>
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_1.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_1.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_2.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_2.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_3.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_3.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_4.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_4.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_5.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_5.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_6.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_6.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_7.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--2">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_7.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+
+                        <!-- Start Gallery Grid  -->
+                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_8.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
+                            <div class="edu-gallery-grid">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_8.jpg')}}" alt="Portfolio Images">
+                                    </div>
+                                </div>
+
+                                <div class="zoom-icon">
+                                    <i class="icon-zoom-in-line"></i>
+                                </div>
+                                <div class="hover-action">
+                                    <div class="hover-content">
+                                        <div class="hover-text">
+                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <!-- End Gallery Grid  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{--/end college campus photo  --}}
                 <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                     <div class="shape-image shape-image-1">
                         <img src="{{ asset('website/assets/images/shapes/shape-03.png')}}" alt="Shape Thumb" />
@@ -1314,7 +1781,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
         <!-- End Event Area  -->
 
         <!-- Start Newsletter Area  -->
