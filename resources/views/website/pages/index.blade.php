@@ -70,7 +70,7 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <img src="{{ asset('website/assets/images/icons/activities.png')}}" alt="Icons Images">
+                                    <img src="{{ asset('website/assets/images/icons/ENVIRNOMENT.png')}}" alt="Icons Images">
                                     {{-- <i class="fa-solid fa-seedling " style="color: #404197;"></i> --}}
                                     
                                 </div>
@@ -88,11 +88,12 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
+                                    <img src="{{ asset('website/assets/images/icons/ENCOURANGE.png')}}" alt="Icons Images">
                                     {{-- <i class="fi fi-sr-leaf-heart"></i> --}}
-                                    <i class="icon-student-read"></i>
+                                    {{-- <i class="icon-student-read"></i> --}}
                                 </div>
                                 <div class="content">
-                                    <h6 class="title"><a href="#">Encouragement to the aspersion of talent of the students</a></h6>
+                                    <h6 class="title"><a href="#">Encouragement to talent of the students</a></h6>
                                     <p class="description">24 Course</p>
                                 </div>
                             </div>
@@ -105,7 +106,8 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icon-Pencil"></i>
+                                    <img src="{{ asset('website/assets/images/icons/Individual_guidance.png')}}" alt="Icons Images">
+                                    {{-- <i class="icon-Pencil"></i> --}}
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Individual guidance</a></h6>
@@ -121,7 +123,8 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icon-Class"></i>
+                                    <img src="{{ asset('website/assets/images/icons/ENTERPERNOUR.png')}}" alt="Icons Images">
+                                    {{-- <i class="icon-Class"></i> --}}
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Vocational and Entrepreneurship guidance</a></h6>
@@ -137,7 +140,8 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icon-Setting"></i>
+                                    <img src="{{ asset('website/assets/images/icons/ONLINE_ADMISION.png')}}" alt="Icons Images">
+                                    {{-- <i class="icon-Setting"></i> --}}
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Online admission (Computerized admission)</a></h6>
@@ -153,7 +157,8 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icon-Mind"></i>
+                                    <img src="{{ asset('website/assets/images/icons/activities.png')}}" alt="Icons Images">
+                                    {{-- <i class="icon-Mind"></i> --}}
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Various forums for curricular and extracurricular activities</a></h6>
@@ -169,7 +174,8 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icon-Headphone"></i>
+                                    <img src="{{ asset('website/assets/images/icons/CARRERE.png')}}" alt="Icons Images">
+                                    {{-- <i class="icon-Headphone"></i> --}}
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Career Counseling cell</a></h6>
@@ -185,7 +191,8 @@
                         <div class="service-card service-card-5">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icon-Microscope"></i>
+                                    <img src="{{ asset('website/assets/images/icons/NetResoCentre.png')}}" alt="Icons Images">
+                                    {{-- <i class="icon-Microscope"></i> --}}
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Network Resource Centre</a></h6>
@@ -1766,7 +1773,7 @@
     </div>
 </div>
 {{--/end college campus photo  --}}
-                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                {{-- <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                     <div class="shape-image shape-image-1">
                         <img src="{{ asset('website/assets/images/shapes/shape-03.png')}}" alt="Shape Thumb" />
                     </div>
@@ -1779,7 +1786,7 @@
                     <div class="shape-image shape-image-4">
                         <img src="{{ asset('website/assets/images/shapes/shape-05-01.png')}}" alt="Shape Thumb" />
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <!-- End Event Area  -->

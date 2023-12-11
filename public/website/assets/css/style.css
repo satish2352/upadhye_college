@@ -16338,6 +16338,7 @@ button.edu-btn.btn-border {
 }
 .about-style-4 .gallery-wrapper .image-1{
 /* height: 60rem!important; */
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 767px) {
   .about-style-4 .gallery-wrapper .image-1 {
