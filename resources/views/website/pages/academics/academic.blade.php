@@ -66,7 +66,7 @@
                     <div class="feature-style-6 mt--40">
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="icon">
-                                <img src="{{ asset('website/assets/images/icons/book.png')}}" alt="Icons Images">
+                                <img src="{{ asset('website/assets/images/icons/degree.png')}}" width="50px" alt="Icons Images">
 
                                 {{-- <img src="assets/images/icons/book.png" alt="Icons Images"> --}}
                             </div>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="icon">
-                                <img src="{{ asset('website/assets/images/icons/book.png')}}" alt="Icons Images">
+                                <img src="{{ asset('website/assets/images/icons/infrastructure.png')}}" width="50px" alt="Icons Images">
                                 {{-- <img src="assets/images/icons/book.png" alt="Icons Images"> --}}
                             </div>
                             <div class="content">
@@ -87,7 +87,7 @@
                         </div>
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="icon">
-                                <img src="{{ asset('website/assets/images/icons/book.png')}}" alt="Icons Images">
+                                <img src="{{ asset('website/assets/images/icons/coach.png')}}" width="50px" alt="Icons Images">
 
                                 {{-- <img src="assets/images/icons/book.png" alt="Icons Images"> --}}
                             </div>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="icon">
-                                <img src="{{ asset('website/assets/images/icons/book.png')}}" alt="Icons Images">
+                                <img src="{{ asset('website/assets/images/icons/graduated.png')}}" width="50px" alt="Icons Images">
                                 {{-- <img src="assets/images/icons/book.png" alt="Icons Images"> --}}
                             </div>
                             <div class="content">
@@ -122,7 +122,7 @@
                         </div>
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="icon">
-                                <img src="{{ asset('website/assets/images/icons/book.png')}}" alt="Icons Images">
+                                <img src="{{ asset('website/assets/images/icons/leadership.png')}}" width="50px" alt="Icons Images">
                                 {{-- <img src="assets/images/icons/book.png" alt="Icons Images"> --}}
                             </div>
                             <div class="content">
@@ -132,7 +132,7 @@
                         </div>
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="icon">
-                                <img src="{{ asset('website/assets/images/icons/book.png')}}" alt="Icons Images">
+                                <img src="{{ asset('website/assets/images/icons/meditation.png')}}" alt="Icons Images">
                             </div>
                             <div class="content">
                                 {{-- <h6 class="title">Industry Expert Instructor</h6> --}}

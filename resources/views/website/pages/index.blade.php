@@ -866,7 +866,7 @@
         <!-- End Accordion Area  -->
 
       
-        <div class="eduvibe-home-three-testimonial edu-testimonial-area testimonial-four-wrapper edu-section-gap bg-image">
+        {{-- <div class="eduvibe-home-three-testimonial edu-testimonial-area testimonial-four-wrapper edu-section-gap bg-image">
             <div class="container eduvibe-animated-shape">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-8">
@@ -990,10 +990,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-  {{--cummittee  --}}
+        </div> --}}
 
-        
+
+  {{--cummittee  --}}
   <div class="edu-elements-area edu-section-gap bg-color-white">
     <div class="container">
         <div class="row g-5">
@@ -1157,7 +1157,7 @@
             <!-- End Instructor Grid  -->
 
             <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
+            {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
                 <div class="edu-instructor-grid edu-instructor-1">
                     <div class="edu-instructor">
                         <div class="inner">
@@ -1178,11 +1178,11 @@
                         <span class="desc">SEO Expert</span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- End Instructor Grid  -->
 
             <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
+            {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
                 <div class="edu-instructor-grid edu-instructor-1">
                     <div class="edu-instructor">
                         <div class="inner">
@@ -1203,7 +1203,7 @@
                         <span class="desc">Digital Marketer</span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- End Instructor Grid  -->
 
         </div>

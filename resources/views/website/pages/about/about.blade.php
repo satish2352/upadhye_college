@@ -130,8 +130,8 @@
                     <div class="row g-5">
                         <div class="col-lg-6">
                             <div class="about-image-gallery">
-                                <img class="image-1" src="{{ asset('website/assets/images/about/about-09/about-image-01.jpg')}}" alt="About Main Thumb" />
-                                <div class="image-2"><img src="{{ asset('website/assets/images/about/about-09/about-image-02.jpg')}}" alt="About Parallax Thumb" /></div>
+                                <img class="image-1" src="{{ asset('website/assets/images/about/about-09/about_image.png')}}" alt="About Main Thumb" />
+                                <div class="image-2"><img src="{{ asset('website/assets/images/about/about-09/about_image1.png')}}"  alt="About Parallax Thumb" /></div>
                                 <div class="badge-inner"><img class="image-3" src="{{ asset('website/assets/images/about/about-09/badge.png')}}" alt="About Circle Thumb" /></div>
                                 <div class="shape-image shape-image-1"><img src="{{ asset('website/assets/images/shapes/shape-04-01.png')}}" alt="Shape Thumb" /></div>
                             </div>
@@ -1072,7 +1072,7 @@
         {{-- End vission mission --}}
 
         {{-- start managment team --}}
-        <div class="edu-instructor-area eduvibe-home-one-instructor edu-section-gap bg-color-primary">
+        {{-- <div class="edu-instructor-area eduvibe-home-one-instructor edu-section-gap bg-color-primary">
             <div class="container eduvibe-animated-shape">
                 <div class="row">
                     <div class="col-lg-12">
@@ -1195,7 +1195,7 @@
                     <div class="shape-image shape-image-2"><img src="{{ asset('website/assets/images/shapes/shape-02-02.png')}}" alt="Shape Thumb" /></div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         {{-- end team --}}
     </section>
     @endsection
