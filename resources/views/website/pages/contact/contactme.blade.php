@@ -51,7 +51,7 @@
             <div class="col-lg-6">
                 <div class="pr--75 pr_lg--0 pr_md--0 pr_sm--0" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                     <div class="thumbnail">
-                        <img class="w-100" src="{{ asset('website/assets/images/contact/contact-me/contact-1.jpg')}}" alt="About Images">
+                        <img class="w-100" src="{{ asset('website/assets/images/contact/contact-me/CONTACT_US.png')}}" alt="About Images">
                         <div class="content-overlay">
                             <h4 class="title">Don’t Be Hesitate To <br /> Contact With Me</h4>
                         </div>
@@ -128,12 +128,12 @@
                 <div class="contact-address-card-2">
                     <div class="inner">
                         <div class="icon">
-                            <img src="{{ asset('website/assets/images/icons/whatsapp.png')}}" alt="Icon Images">
+                            <img src="{{ asset('website/assets/images/icons/CONTACT/CLL.png')}}" width="100px" alt="Icon Images">
                         </div>
                         <div class="content">
                             <h6 class="title">Contact</h6>
-                            <p><span class="subtitle">Mobile: </span><a href="tel:(+88)-1990-6886"> (+88) - 1990 - 6886</a></p>
-                            <p><span class="subtitle">Hotline: </span><a href="tel:1800-1102">1800 - 1102</a></p>
+                            <p><span class="subtitle">Mobile: </span><a href="tel:(+88)-1990-6886"> +91 7888043137</a></p>
+                            <p><span class="subtitle">Mobile: </span><a href="tel:1800-1102">+91 7722071300</a></p>
                         </div>
                     </div>
                 </div>
@@ -143,11 +143,11 @@
                 <div class="contact-address-card-2">
                     <div class="inner">
                         <div class="icon">
-                            <img src="{{ asset('website/assets/images/icons/house.png')}}" alt="Icon Images">
+                            <img src="{{ asset('website/assets/images/icons/CONTACT/LOACTION.png')}}" width="100px" alt="Icon Images">
                         </div>
                         <div class="content">
                             <h6 class="title">Address</h6>
-                            <p>1800 Abbot Kinney Blvd. <br /> Unit D & E Venice</p>
+                            <p>Near Bafna Warehouse, Pimpri Sayyed, <br> Ozar Road, Nashik - 422 003.</p>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                 <div class="contact-address-card-2">
                     <div class="inner">
                         <div class="icon">
-                            <img src="{{ asset('website/assets/images/icons/linkedin.png')}}" alt="Icon Images">
+                            <img src="{{ asset('website/assets/images/icons/CONTACT/WORK.png')}}" width="100px" alt="Icon Images">
                         </div>
                         <div class="content">
                             <h6 class="title">Working Hours</h6>

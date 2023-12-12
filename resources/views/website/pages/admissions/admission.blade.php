@@ -7,13 +7,13 @@
             <div class="col-lg-12">
                 <div class="breadcrumb-inner text-start">
                     <div class="page-title">
-                        <h3 class="title">Course Sidebar</h3>
+                        <h3 class="title">Admission</h3>
                     </div>
                     <nav class="edu-breadcrumb-nav">
                         <ol class="edu-breadcrumb d-flex justify-content-start liststyle">
                             <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
                             <li class="separator"><i class="ri-arrow-drop-right-line"></i></li>
-                            <li class="breadcrumb-item active" aria-current="page">Course Sidebar</li>
+                            <li class="breadcrumb-item active" aria-current="page">Admission</li>
                         </ol>
                     </nav>
                 </div>
@@ -48,7 +48,7 @@
 <div class="edu-course-area edu-section-gap bg-color-white">
     <div class="container">
         <div class="row g-5">
-            <div class="col-lg-4 order-2 oder-lg-1">
+            {{-- <div class="col-lg-4 order-2 oder-lg-1">
                 <aside class="edu-course-sidebar">
                     <!-- Start Widget Wrapper  -->
                     <div class="edu-course-widget widget-shortby">
@@ -636,8 +636,453 @@
                         </nav>
                     </div>
                 </div>
+            </div> --}}
+              <!-- Start About Area  -->
+        <div class="eduvibe-home-five-about edu-about-area about-style-6 edu-section-gap bg-color-white">
+            <div class="container eduvibe-animated-shape">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="about-image-gallery">
+                            <img class="image-1 w-100" src="{{ asset('website/assets/images/about/about-08/about-image-09.jpg')}}" alt="About Images">
+                            <div class="badge-icon">
+                                <div class="badge-inner">
+                                    <img src="{{ asset('website/assets/images/about/about-08/badge.png')}}" alt="Icon Images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 offset-xl-1">
+                        <div class="inner mt_md--40 mt_sm--20">
+                            <div class="section-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                <span class="pre-title">About Us</span>
+                                <h3 class="title">General Guidelines For Admission </h3>
+                            </div>
+                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Admission to all class and courses are strictly provisional and will be confirmed only after receiving the necessary approval of the respective authority. </p>
+                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Admission to the college is on the basis of merit. </p>
+                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Only those applications that fulfil all the eligibility conditions laid down by the authority will be considered for admission</p>
+                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"> In case the students need help with the selection of subject details to be filled in the form, they are advised to seek the help of the admission committee.</p>
+                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"> The right to grant admission to any course is reserved with the college authorities. </p>
+                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800"> It is necessary to take counter-sign education directors on LC from other divisional boards and districts.</p>
+                            {{-- <div class="feature-list-wrapper" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Flexible training programs</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Learn from approved experts</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Friendly environment for you</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Boost your knowledge</div>
+                            </div>
+                            <div class="read-more-btn mt--75 mt_lg--30 mt_md--40 mt_sm--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                <a class="edu-btn" href="about-us-1.html">Know About Us<i class="icon-arrow-right-line-right"></i></a>
+                                <a class="info-btn" href="tel:+288(394)2783"><i class="icon-call"></i>+288 (394) 2783</a>
+                            </div> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div class="shape-image shape-image-1">
+                        <img src="{{ asset('website/assets/images/shapes/shape-05-04.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-2">
+                        <img src="{{ asset('website/assets/images/shapes/shape-33.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-3">
+                        <img src="{{ asset('website/assets/images/shapes/shape-13-05.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-4">
+                        <img src="{{ asset('website/assets/images/shapes/shape-01-03.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-5">
+                        <img src="{{ asset('website/assets/images/shapes/shape-06.png')}}" alt="Shape Thumb" />
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- End About Area  -->
+
+        {{-- start guidelines--}}
+        <div class="eduvibe-home-five-progress edu-service-area edu-section-gap bg-image">
+            <!-- Start Service Area  -->
+            <div class="container eduvibe-animated-shape">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <span class="pre-title">Documents</span>
+                            <h3 class="title">Documents Required For Admission</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 mt--20">
+                    <!-- Start Service Grid  -->
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-7 shape-bg-1">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                    <img src="{{ asset('website/assets/images/icons/passport_size_w.png')}}" width="50px" alt="Icons Images">
+                                        {{-- <i class="icon-book-line"></i> --}}
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Passport-size Photos</a></h6>
+                                    <p class="description">5 passport-size recent Photographs. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                    
+                    <!-- Start Service Grid  -->
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-7 shape-bg-2">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                    <img src="{{ asset('website/assets/images/icons/certificate_w.png')}}" width="50px" alt="Icons Images">
+                                        {{-- <i class="icon-shopping-basket-2-line"></i> --}}
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Marksheet</a></h6>
+                                    <p class="description">Students from other colleges seeking admission must submit the original copies of the mark sheet along with 4 attested Xerox copies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                    <!-- Start Service Grid  -->
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-7 shape-bg-3">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                    <img src="{{ asset('website/assets/images/icons/documents_w.png')}}" width="50px" alt="Icons Images">
+                                        {{-- <i class="icon-trophy-line"></i> --}}
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Leaving certificate</a></h6>
+                                    <p class="description">Students from other colleges seeking admission must submit the original copies of the leaving certificate along with 4 attested Xerox copies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                </div>
+                <div class="row g-5 mt--20">
+                    <!-- Start Service Grid  -->
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-7 shape-bg-1">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                    <img src="{{ asset('website/assets/images/icons/certificate_w.png')}}" width="50px" alt="Icons Images">
+                                        {{-- <i class="icon-book-line"></i> --}}
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Migration certificate</a></h6>
+                                    <p class="description">Students from other boards (ex. CBSE / ICSE) will have to submit migration certificate and mark sheet in original, authenticated by the respective regional authority of the board of education along with 4 xerox copies of the same. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                    
+                    <!-- Start Service Grid  -->
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-7 shape-bg-2">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                    <img src="{{ asset('website/assets/images/icons/cast_certificate_w.png')}}" width="50px" alt="Icons Images">
+                                        {{-- <i class="icon-shopping-basket-2-line"></i> --}}
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Caste Certificate</a></h6>
+                                    <p class="description"> Caste Certificate (If applicable)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                    <!-- Start Service Grid  -->
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-7 shape-bg-3">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                    <img src="{{ asset('website/assets/images/icons/adhar_card_w.png')}}" width="50px" alt="Icons Images">
+                                        {{-- <i class="icon-trophy-line"></i> --}}
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#"> Adhar Card</a></h6>
+                                    <p class="description">Student Adhar Card Xerox.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                </div>
+
+
+                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div class="shape-image shape-image-1">
+                        <img src="{{ asset('website/assets/images/shapes/shape-07-02.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-2">
+                        <img src="{{ asset('website/assets/images/shapes/shape-04-07.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-3">
+                        <img src="{{ asset('website/assets/images/shapes/shape-13-11.png')}}" alt="Shape Thumb" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Service Area  -->
+        </div>
+        {{-- end guidelines --}}
+
+        {{-- start Residencial batches --}}
+        <div class="eduvibe-about-us-one-service edu-service-area edu-section-gapBottom bg-color-white service-bg-position">
+            <div class="container eduvibe-animated-shape">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <span class="pre-title">Time Management</span>
+                            <h3 class="title">Residential Batch for <br /> Medical & Engineering</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 mt--20">
+
+                    <!-- Start Service Grid  -->
+                    <div class="col-lg-3 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-1">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/1)readingcenter.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Reading Center</a></h6>
+                                    <p class="description">8:00am Report at free reading center(Student will be in campus Hostel)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                    <!-- Start Service Grid  -->
+                    <div class="col-lg-3 col-md-6 col-12" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-2">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/2)lecture.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Lectures</a></h6>
+                                    <p class="description">8:30am to 12:15pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                    <!-- Start Service Grid  -->
+                    <div class="col-lg-3 col-md-6 col-12" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-3">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/3)recesses.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Recess and Food</a></h6>
+                                    <p class="description">12:15pm to 1:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                    <!-- Start Service Grid  -->
+                    <div class="col-lg-3 col-md-6 col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-4">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/4)jeeneet.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">MH-CET/JEE(Engineering/Medical Coaching or Tests/Practicals)</a></h6>
+                                    <p class="description">1:00pm to 4:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                     <!-- Start Service Grid  -->
+                     <div class="col-lg-3 col-md-6 col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-4">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/5)playingexercisetime.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Exercise/Meditation/Physical workout/Games</a></h6>
+                                    <p class="description">4:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                     <!-- Start Service Grid  -->
+                     <div class="col-lg-3 col-md-6 col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-4">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/6)freshenup.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Student freshen up small grub and relax</a></h6>
+                                    <p class="description">5:30pm to 6:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                     <!-- Start Service Grid  -->
+                     <div class="col-lg-3 col-md-6 col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-4">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/7)freereading.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Free reading or similar activities</a></h6>
+                                    <p class="description">6:30pm to 7:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                     <!-- Start Service Grid  -->
+                     <div class="col-lg-3 col-md-6 col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-4">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/8)dinner.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Dinner</a></h6>
+                                    <p class="description">7:00pm to 8:00pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+
+                     <!-- Start Service Grid  -->
+                     <div class="col-lg-3 col-md-6 col-12" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <div class="service-card service-card-2 card-bg-4">
+                            <div class="inner">
+                                <div class="icon">
+                                    <a href="#">
+                                        <img src="{{ asset('website/assets/images/icons/9)studyhall.png')}}" alt="Service Images">
+                                    </a>
+                                    <div class="shape-list">
+                                        <img class="shape shape-1" src="{{ asset('website/assets/images/icons/service-icon-01.png')}}" alt="Shape Images">
+                                        <img class="shape shape-2" src="{{ asset('website/assets/images/icons/service-icon-02.png')}}" alt="Shape Images">
+                                        <img class="shape shape-3" src="{{ asset('website/assets/images/icons/service-icon-03.png')}}" alt="Shape Images">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title"><a href="#">Studies and assignments in study hall only</a></h6>
+                                    <p class="description">8:00pm to 10:30pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Grid  -->
+                </div>
+
+                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div class="shape-image shape-image-1">
+                        <img src="{{ asset('website/assets/images/shapes/shape-04-03.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-2">
+                        <img src="{{ asset('website/assets/images/shapes/shape-02-07.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-3">
+                        <img src="{{ asset('website/assets/images/shapes/shape-15.png')}}" alt="Shape Thumb" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        {{--end  Residencial batches--}}
+      
+    
     </div>
 </div>
 </section>

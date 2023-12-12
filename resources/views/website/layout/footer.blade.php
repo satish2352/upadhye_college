@@ -11,7 +11,7 @@
                                         <img class="logo-light" src="{{ asset('website/assets/images/logo/collegelogo_w.png')}}" alt="Site Logo">
                                     </a>
                                 </div>
-                                <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                                <p class="description"></p>
                                 <ul class="social-share">
                                     <li><a href="#"><i class="icon-Fb"></i></a></li>
                                     <li><a href="#"><i class="icon-linkedin"></i></a></li>

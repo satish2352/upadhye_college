@@ -5,12 +5,12 @@ namespace App\Http\Controllers\Website;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CoursesController extends Controller
+class CampusController extends Controller
 {
-    public function courses()
+    public function campus()
     {
         try {
-            return view('website.pages.courses.courses');
+            return view('website.pages.campus.campus');
         } catch (\Exception $e) {
             return $e;
         }
