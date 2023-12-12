@@ -466,7 +466,7 @@
             <div class="col-lg-8">
                 <div class="pr--75 pr_lg--30 pr_md--0 pr_sm--0">
                     <div class="thumbnail video-popup-wrapper">
-                        <img class="radius-small" src="{{ asset('website/assets/images/videopopup/UNIFORM_EILIGI.png')}}" width="600rem" alt="Video PopUp Thumb">
+                        <img class="radius-small" src="{{ asset('website/assets/images/videopopup/Group_8.png')}}" width="600rem" alt="Video PopUp Thumb">
                         {{-- <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation position-to-top video-popup-activation color-secondary size-80"> --}}
                             <span class="play-icon"></span>
                         </a>
