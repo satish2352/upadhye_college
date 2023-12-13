@@ -15,10 +15,10 @@ class AdmissionController extends Controller
             return $e;
         }
     }
-    public function admissionform()
+    public function scholarshipform()
     {
         try {
-            return view('website.pages.admissions.admissionform');
+            return view('website.pages.admissions.scholarshipform');
         } catch (\Exception $e) {
             return $e;
         }

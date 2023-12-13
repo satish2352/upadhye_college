@@ -72,11 +72,50 @@
                     </form>
                 </div>
             </div> --}}
-           
+            <div class="col-lg-10">
+                <div class="login-form-box">
+                    <h3 class="mb-30">Apply for Scholarship - Course Information</h3>
+                    <form class="login-form" action="#">
+                        <div class="input-box mb--30">
+                            <label for="">Select Course</label>
+                            <select name="" id="">
+                                <option value="">XI-XII SCIENCE</option>
+                                <option value="">ENGINEERING</option>
+                                <option value="">MEDICAL</option>
+                            </select>
+                        </div>
+                        <div class="input-box mb--30">
+                            <label for="">Admission Mode</label>
+                            <select name="" id="">
+                                <option value="">New Admission</option>
+                                <option value="">Register Student</option>
+                            </select>
+                        </div>
+                        <div class="input-box mb--30">
+                            <input type="text" placeholder="Full Name" />
+                        </div>
+                        <div class="input-box mb--30">
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="input-box mb--30">
+                            <input type="text" placeholder="Adddress" />
+                        </div>
+                        <div class="input-box mb--30">
+                            <input type="number" placeholder="Mobile No" />
+                        </div>
+                        <button class="rn-btn edu-btn w-100 mb--30" type="submit">
+                            <span>Register</span>
+                        </button>
+                        <div class="input-box">
+                            <input id="checkbox-2" type="checkbox" />
+                            <label for="checkbox-2">I Agree to receive SMS/Call from Upadhye College</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 
 </section>
 @endsection

@@ -11,12 +11,12 @@
                                         <img class="logo-light" src="{{ asset('website/assets/images/logo/collegelogo_w.png')}}" alt="Site Logo">
                                     </a>
                                 </div>
-                                <p class="description"></p>
+                                <p class="description">Upadhye Best science colleges in Nashik Today Nashik has become an industrial center and in the last six decades the eternal Godavari has silently watched a great change.</p>
                                 <ul class="social-share">
                                     <li><a href="#"><i class="icon-Fb"></i></a></li>
-                                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="icon-Pinterest"></i></a></li>
                                     <li><a href="#"><i class="icon-Twitter"></i></a></li>
+                                    <li><a href="#"><i class="icon-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>

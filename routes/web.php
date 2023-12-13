@@ -32,7 +32,7 @@ Route::get('/about', ['as' => 'about', 'uses' => 'App\Http\Controllers\Website\A
 Route::get('/academic', ['as' => 'academic', 'uses' => 'App\Http\Controllers\Website\AcademicController@academic']);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'App\Http\Controllers\Website\ContactController@contact']);
 Route::get('/admission', ['as' => 'admission', 'uses' => 'App\Http\Controllers\Website\AdmissionController@admission']);
-Route::get('/admissionform', ['as' => 'admissionform', 'uses' => 'App\Http\Controllers\Website\AdmissionController@admissionform']);
+Route::get('/scholarshipform', ['as' => 'scholarshipform', 'uses' => 'App\Http\Controllers\Website\AdmissionController@scholarshipform']);
 Route::get('/campus', ['as' => 'campus', 'uses' => 'App\Http\Controllers\Website\CampusController@campus']);
 Route::get('/achiever', ['as' => 'achiever', 'uses' => 'App\Http\Controllers\Website\AchieversController@achiever']);
 Route::get('/courses', ['as' => 'courses', 'uses' => 'App\Http\Controllers\Website\CourseController@courses']);
