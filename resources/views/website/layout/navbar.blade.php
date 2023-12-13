@@ -6,7 +6,7 @@
                 <div class="col-lg-6 col-xl-2 col-md-6 col-6">
                     <div class="logo">
                         <a href="{{url('/')}}">
-                            <img class="logo-light" src="{{ asset('website/assets/images/logo/collegelogo.png')}}" alt="Site Logo">
+                            <img class="logo-light" src="{{ asset('website/assets/images/logo/LOGONEW.png')}}" alt="Site Logo">
                         </a>
                     </div>
                 </div>
@@ -67,11 +67,11 @@
                                     <li><a href="{{url('/medical')}}">Medical</a></li>
                                 </ul>
                             </li>
-                            <li class="has-droupdown"><a href="{{url('/campus')}}">Campus</a>
+                            <li class="has-droupdown"><a href="#">Campus</a>
                                 <ul class="submenu">
+                                    <li><a href="{{url('/campus')}}">Campus</a></li>
                                     <li><a href="{{url('/achiever')}}">Achievers</a></li>
-                                    {{-- <li><a href="product-details.html">Product Details</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
+                                    {{-- <li><a href="cart.html">Cart Page</a></li>
                                     <li><a href="checkout.html">Checkout</a></li> --}}
                                 </ul>
                             </li>
