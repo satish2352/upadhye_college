@@ -14,7 +14,7 @@
             </div>
 {{-- JEE ADVANCED --}}
             <div class="row g-5 mt--20">
-                <h6 class="title">JEE ADVANCED</h6>
+                <center><h6 class="title" style="background-color:rgb(34, 34, 91) ; color:white">JEE ADVANCED</h6></center>
 
                 <!-- Start Instructor Grid  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -126,7 +126,7 @@
             </div>
              {{-- start JEE MAINS --}}
             <div class="row g-5 mt--20">
-                <h6 class="title">JEE MAINS</h6>
+                <center><h6 class="title" style="background-color:rgb(34, 34, 91) ; color:white">JEE MAINS</h6></center>
 
                 <!-- Start Instructor Grid  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -264,7 +264,7 @@
             </div>
             {{-- start MHT-CET-2023 --}}
             <div class="row g-5 mt--20">
-                <h6 class="title">MHT-CET-2023</h6>
+                <center><h6 class="title" style="background-color:rgb(34, 34, 91) ; color:white">MHT-CET-2023</h6></center>
 
                 <!-- Start Instructor Grid  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -402,7 +402,8 @@
             </div>
             {{-- start --}}
             <div class="row g-5 mt--20">
-                <h6 class="title">NEET-2023-ACHIEVERS</h6>
+
+                <center><h6 class="title" style="background-color:rgb(34, 34, 91) ; color:white">NEET-2023-ACHIEVERS</h6></center>
 
                 <!-- Start Instructor Grid  -->
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">

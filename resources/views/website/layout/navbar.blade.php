@@ -23,10 +23,10 @@
                                     <li><a href="index-2.html">Landing Demo</a></li>
                                 </ul> --}}
                             </li>
-                            <li class="has-droupdown"><a href="#">About</a>
+                            <li class=""><a href="{{url('/about')}}">About</a>
                                 <ul class="submenu">
-                                    <li><a href="{{url('/about')}}">About Us </a></li>
-                                    <li><a href="{{url('/achiever')}}">Achievers</a></li>
+                                    {{-- <li><a href="">About Us </a></li>
+                                    <li><a href="{{url('/achiever')}}">Achievers</a></li> --}}
                                     {{-- <li><a href="about-us-3.html">About Us 3</a></li> --}}
                                 </ul>
                             </li>
@@ -67,13 +67,13 @@
                                     <li><a href="{{url('/medical')}}">Medical</a></li>
                                 </ul>
                             </li>
-                            <li class=""><a href="{{url('/campus')}}">Campus</a>
-                                {{-- <ul class="submenu">
-                                    <li><a href="shop.html">Shop Page</a></li>
-                                    <li><a href="product-details.html">Product Details</a></li>
+                            <li class="has-droupdown"><a href="{{url('/campus')}}">Campus</a>
+                                <ul class="submenu">
+                                    <li><a href="{{url('/achiever')}}">Achievers</a></li>
+                                    {{-- <li><a href="product-details.html">Product Details</a></li>
                                     <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                </ul> --}}
+                                    <li><a href="checkout.html">Checkout</a></li> --}}
+                                </ul>
                             </li>
                             <li class=""><a href="{{url('/contact')}}">Contact</a>
                                 {{-- <ul class="submenu">

@@ -2,8 +2,9 @@
 @section('content')
 <section>
       
+
         <!-- Start Sldier Area  -->
-        <div class="slider-area banner-style-3 bg-image">
+        {{-- <div class="slider-area banner-style-3 bg-image">
             <div class="d-flex align-items-center height-940">
                 <div class="container eduvibe-animated-shape">
                     <div class="row g-5 align-items-center">
@@ -49,16 +50,84 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End Sldier Area  -->
 
+        {{-- new slider  --}}
+       
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{ asset('website/assets/images/banner/banner-03/BANNER1.png')}}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{ asset('website/assets/images/banner/banner-03/BANNER2.jpg')}}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{ asset('website/assets/images/banner/banner-03/BANNER1.png')}}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        {{-- end slider --}}
+
+         <!-- Start Video Area  -->
+         <div class="edu-workshop-area eduvibe-home-three-video workshop-style-1 edu-section-gap bg-image bg11">
+            <div class="container eduvibe-animated-shape">
+                <div class="row gy-lg-0 gy-5 row--60 align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="workshop-inner">
+                            <div class="section-title text-white" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                {{-- <span class="pre-title">Greeting</span> --}}
+                                <h3 class="title" style="color: #404197">Welcome</h3>
+                            </div>
+                            <p class="description" style="color: #404197" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">We welcome you to Upadhye College, a place where academic excellence meets vibrant campus life. We are a community of passionate learners, dedicated faculty, and supportive staff who are committed to helping you reach your full potential.</p>
+                            <div class="read-more-btn" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                                {{-- <a class="edu-btn btn-white" href="event-list.html">More Upcomming Workshop<i class="icon-arrow-right-line-right"></i></a> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="thumbnail video-popup-wrapper">
+                            <img class="radius-small w-100" src="{{ asset('website/assets/images/videopopup/Group_5.png')}}" alt="About Image">
+                            {{-- <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation position-to-top video-popup-activation color-secondary size-60">
+                                <span class="play-icon"></span>
+                            </a> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div class="shape-image shape-image-1">
+                        <img src="{{ asset('website/assets/images/shapes/shape-09-01.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-2">
+                        <img src="{{ asset('website/assets/images/shapes/shape-04-05.png')}}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-3">
+                        <img src="{{ asset('website/assets/images/shapes/shape-13-02.png')}}" alt="Shape Thumb" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Video Area  -->
+
+{{--start Features --}}
         <div class="sercice-area eduvibe-service-five service-wrapper-5 edu-section-gap bg-color-white">
             <div class="container eduvibe-animated-shape">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                            <span class="pre-title">Course Categories</span>
-                            <h3 class="title">Popular Topics To Learn</h3>
+                            <span class="pre-title">Features</span>
+                            <h3 class="title">Salient Features Of The College</h3>
                         </div>
                     </div>
                 </div>
@@ -230,6 +299,13 @@
                 </div>
             </div>
         </div>
+{{-- end Features  --}}
+
+{{--  --}}
+
+       
+
+{{--  --}}
 
 {{--girls hostel  --}}
         <div class="home-three-about edu-about-area about-style-4 bg-color-white edu-section-gapBottom">
@@ -714,47 +790,6 @@
             </div>
         </div>
         <!-- End Counterup Area  -->
-
-        <!-- Start Video Area  -->
-        <div class="edu-workshop-area eduvibe-home-three-video workshop-style-1 edu-section-gap bg-image bg-color-primary">
-            <div class="container eduvibe-animated-shape">
-                <div class="row gy-lg-0 gy-5 row--60 align-items-center">
-                    <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="workshop-inner">
-                            <div class="section-title text-white" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                {{-- <span class="pre-title">Greeting</span> --}}
-                                <h3 class="title">Welcome</h3>
-                            </div>
-                            <p class="description" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">We welcome you to Upadhye College, a place where academic excellence meets vibrant campus life. We are a community of passionate learners, dedicated faculty, and supportive staff who are committed to helping you reach your full potential.</p>
-                            <div class="read-more-btn" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
-                                {{-- <a class="edu-btn btn-white" href="event-list.html">More Upcomming Workshop<i class="icon-arrow-right-line-right"></i></a> --}}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="thumbnail video-popup-wrapper">
-                            <img class="radius-small w-100" src="{{ asset('website/assets/images/videopopup/Group_5.png')}}" alt="About Image">
-                            {{-- <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation position-to-top video-popup-activation color-secondary size-60">
-                                <span class="play-icon"></span>
-                            </a> --}}
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-                    <div class="shape-image shape-image-1">
-                        <img src="{{ asset('website/assets/images/shapes/shape-09-01.png')}}" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-2">
-                        <img src="{{ asset('website/assets/images/shapes/shape-04-05.png')}}" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-3">
-                        <img src="{{ asset('website/assets/images/shapes/shape-13-02.png')}}" alt="Shape Thumb" />
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- End Video Area  -->
 
         <!-- Start Accordion Area  -->
         {{-- <div class="edu-accordion-area eduvibe-home-three-accordion accordion-shape-1 edu-section-gap bg-color-white">

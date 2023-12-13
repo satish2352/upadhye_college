@@ -58,7 +58,7 @@
                                 <div class="inner">
                                     <div class="widget-information">
                                         <ul class="information-list">
-                                            <li><i class="icon-map-pin-line"></i>Near Bafna Warehouse, Pimpri Sayyed, Ozar Road, Nashik - 422 003.
+                                            <li><i class="icon-map-pin-line"></i>Upadhye College Of Science, Near Namdhari Seeds, Bafana Warehouse Road, Ozar Road Adgaon, 422003.
                                             </li>
                                             <li><i class="icon-phone-fill"></i><a href="tel::+91 7888043137">+91 7888043137</a></li>
                                             <li><i class="icon-phone-fill"></i><a href="tel:+91 7722071300">+91 7722071300</a></li>
@@ -135,6 +135,7 @@
     <script src="{{ asset('website/assets/js/vendor/tilt.jquery.min.js')}}"></script>
     <!-- Main JS -->
     <script src="{{ asset('website/assets/js/main.js')}}"></script>
+    
 </body>
 
 

@@ -50,11 +50,23 @@
 <div class="edu-course-area edu-section-gap bg-color-white">
     <div class="container">
         <div class="row g-5">
-            {{-- Addmission form  --}}
+            <div class="row">
+                <div class="col-6">
+                     {{-- Addmission form  --}}
             <div class="read-more-btn " data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                 <a class="edu-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeRJRimDiRTUA6wR_gUhHpy8hSyTtAdMubY35O8LuME6sM3qQ/viewform?usp=pp_url">Addmission Form <i class="icon-arrow-right-line-right"></i></a>
             </div>
             {{-- addmission form --}}
+                </div>
+                <div class="col-6">
+                     {{-- Scholarship form  --}}
+            <div class="read-more-btn " data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <a class="edu-btn" href="{{url('/scholarshipform')}}">Scholarship Form <i class="icon-arrow-right-line-right"></i></a>
+            </div>
+            {{-- Scholarship form --}}
+                </div>
+            </div>
+           
             {{-- <div class="col-lg-4 order-2 oder-lg-1">
                 <aside class="edu-course-sidebar">
                     <!-- Start Widget Wrapper  -->

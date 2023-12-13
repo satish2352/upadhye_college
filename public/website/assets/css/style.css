@@ -1409,7 +1409,9 @@ iframe {
 .bg-color-primary {
   background-color: var(--color-primary);
 }
-
+.bg11{
+  background-color: var(--color-secondary-alt);
+}
 .bg-color-secondary {
   background-color: var(--color-secondary);
 }
