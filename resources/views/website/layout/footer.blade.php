@@ -26,12 +26,11 @@
                                 <h5 class="widget-title">Explore</h5>
                                 <div class="inner">
                                     <ul class="footer-link link-hover">
-                                        <li><a href="about-us-1.html"><i class="icon-Double-arrow"></i>About Us</a></li>
-                                        <li><a href="event-list.html"><i class="icon-Double-arrow"></i>Upcoming Events</a></li>
-                                        <li><a href="blog-standard.html"><i class="icon-Double-arrow"></i>Blog & News</a></li>
-                                        <li><a href="faq.html"><i class="icon-Double-arrow"></i>FAQ Question</a></li>
-                                        <li><a href="testimonial.html"><i class="icon-Double-arrow"></i>Testimonial</a></li>
-                                        <li><a href="privacy-policy.html"><i class="icon-Double-arrow"></i>Privacy Policy</a></li>
+                                        <li><a href="{{url('/about')}}"><i class="icon-Double-arrow"></i>About Us</a></li>
+                                        <li><a href="{{url('/academic')}}"><i class="icon-Double-arrow"></i>Academics</a></li>
+                                        <li><a href="{{url('/achiever')}}"><i class="icon-Double-arrow"></i>Achiever</a></li>
+                                        <li><a href="{{url('/campus')}}"><i class="icon-Double-arrow"></i>Campus</a></li>
+                                        {{-- <li><a href="privacy-policy.html"><i class="icon-Double-arrow"></i>Privacy Policy</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -39,15 +38,15 @@
 
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="edu-footer-widget quick-link-widget">
-                                <h5 class="widget-title">Useful Links</h5>
+                                <h5 class="widget-title">Our Courses</h5>
                                 <div class="inner">
                                     <ul class="footer-link link-hover">
-                                        <li><a href="contact-us.html"><i class="icon-Double-arrow"></i>Contact Us</a></li>
-                                        <li><a href="pricing.html"><i class="icon-Double-arrow"></i>Pricing Plan</a></li>
-                                        <li><a href="instructor-profile.html"><i class="icon-Double-arrow"></i>Instructor Profile</a></li>
-                                        <li><a href="faq.html"><i class="icon-Double-arrow"></i>FAQ</a></li>
+                                        <li><a href="{{url('/science')}}"><i class="icon-Double-arrow"></i>Science</a></li>
+                                        <li><a href="{{url('/engineering')}}"><i class="icon-Double-arrow"></i>Engineering</a></li>
+                                        <li><a href="{{url('/medical')}}"><i class="icon-Double-arrow"></i>Medical</a></li>
+                                        {{-- <li><a href="faq.html"><i class="icon-Double-arrow"></i>FAQ</a></li>
                                         <li><a href="course-style-3.html"><i class="icon-Double-arrow"></i>Popular Courses</a></li>
-                                        <li><a href="purchase-guide.html"><i class="icon-Double-arrow"></i>Terms & Conditions</a></li>
+                                        <li><a href="purchase-guide.html"><i class="icon-Double-arrow"></i>Terms & Conditions</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -87,7 +86,16 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="inner text-center">
-                                <p>Copyright 2023 <a href="#">EduVibe</a> Designed By <a href="https://themeforest.net/user/devsvibe">DevsVibe</a>. All Rights Reserved</p>
+                                <p class="copyright__text">Copyright <span class="dynamic-year"></span><!-- /.dynamic-year --> 
+                                    | Upadhye Classes Designed by 
+                                    <a href="https://www.sumagoinfotech.com/index1.php" target="_blank">
+                                        <img src="{{ asset('website/assets/images/logo/red-heart.png')}}" className="img-fluid" style="width:20px " alt="" />
+                                      </a>
+                                      From Nashik 
+                                      {{-- <a to="https://sumagoinfotech.com/" class="cursor" target="_blank">
+                                    <img src="{{ asset('website/assets/images/logo_sm.png')}}" className="img-fluid " alt="" style="width:18px" >
+                                  </a> --}}
+                                </p>
                             </div>
                         </div>
                     </div>

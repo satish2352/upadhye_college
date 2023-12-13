@@ -385,7 +385,7 @@
                                       --}}
                                  <div class="client-info">
                                         <div class="thumbnail">
-                                            <img src="{{ asset('website/assets/images/testimonial/testimonial-04/principal.png')}}" alt="Client Images">
+                                            {{-- <img src="{{ asset('website/assets/images/testimonial/testimonial-04/principal.png')}}" alt="Client Images"> --}}
                                         </div>
                                         <div class="content">
                                             <h6 class="title">Mr.Upadhye Sir</h6>

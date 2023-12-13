@@ -160,9 +160,9 @@
                             <img src="{{ asset('website/assets/images/icons/CONTACT/WORK.png')}}" width="100px" alt="Icon Images">
                         </div>
                         <div class="content">
-                            <h6 class="title">Working Hours</h6>
-                            <p><span class="subtitle">Monday - Friday: </span><span class="text">09:00 - 20:00</span></p>
-                            <p><span class="subtitle">Sunday & Saturday: </span><span class="text">10:30 - 22:00</span></p>
+                            <h6 class="title">Opening Hours</h6>
+                            <p><span class="subtitle">Mon - Sat: </span><span class="text">09:00 am - 06:00 pm</span></p>
+                            <p><span class="subtitle">Sunday : </span><span class="text">09:00 am - 04:00 pm</span></p>
                         </div>
                     </div>
                 </div>

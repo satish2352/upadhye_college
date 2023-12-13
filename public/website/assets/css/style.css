@@ -2432,6 +2432,9 @@ textarea:-ms-input-placeholder {
 .edu-section-gapTop {
   padding-top: 130px !important;
 }
+.bhh{
+  padding-top: 50px !important; 
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .edu-section-gapTop {
@@ -15896,6 +15899,7 @@ button.edu-btn.btn-border {
 .about-style-1 .about-image-gallery .image-1 {
   border-radius: 5px;
   width: 100%;
+ 
 }
 
 .about-style-1 .about-image-gallery .image-2 {
@@ -25564,4 +25568,8 @@ Gallery Item
 
 .copyright-default p a:hover {
   color: var(--color-primary);
+}
+
+.admission{
+  padding: 20px!important;
 }

@@ -60,8 +60,8 @@
             <div class="col-lg-12 col-xl-12">
                 <div class="inner mt_mobile--40">
                     <div class="section-title text-start" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <span class="pre-title">Who We Are</span>
-                        <h3 class="title">Objectives</h3>
+                        <center><span class="pre-title">Who We Are</span>
+                        <h3 class="title">Objectives</h3></center>
                     </div>
                     <div class="feature-style-6 mt--40">
                         <div class="edu-feature-list color-variation-1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -225,7 +225,7 @@
 </div>
 {{--end  --}}
 <div class="edu-service-area service-wrapper-3">
-    <div class="about-us-two-service-wrapper edu-section-gapTop bg-image position-relative">
+    <div class="about-us-two-service-wrapper bhh bg-image position-relative">
         <div class="eduvibe-about-us-two-service ">
             <div class="container eduvibe-animated-shape">
                 <div class="row">
@@ -339,7 +339,7 @@
             <div class="container eduvibe-animated-shape">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <div class="video-gallery-wrapper edu-section-gapTop video-section-overlayto-another">
+                        <div class="video-gallery-wrapper bhh video-section-overlayto-another">
                             <div class="video-gallery-1">
                                 <div class="thumbnail video-popup-wrapper">
                                     <img class="radius-small w-100" src="{{ asset('website/assets/images/videopopup/table.jpg')}}" alt="Video Images">

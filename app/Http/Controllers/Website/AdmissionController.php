@@ -15,4 +15,12 @@ class AdmissionController extends Controller
             return $e;
         }
     }
+    public function admissionform()
+    {
+        try {
+            return view('website.pages.admissions.admissionform');
+        } catch (\Exception $e) {
+            return $e;
+        }
+    }
 }

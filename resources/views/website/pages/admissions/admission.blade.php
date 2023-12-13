@@ -20,6 +20,9 @@
             </div>
         </div>
 
+
+      
+
         <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
             <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                 <div class="shape-image shape-image-1">
@@ -44,10 +47,14 @@
         </div>
     </div>
 </div>
-
 <div class="edu-course-area edu-section-gap bg-color-white">
     <div class="container">
         <div class="row g-5">
+            {{-- Addmission form  --}}
+            <div class="read-more-btn " data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                <a class="edu-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeRJRimDiRTUA6wR_gUhHpy8hSyTtAdMubY35O8LuME6sM3qQ/viewform?usp=pp_url">Addmission Form <i class="icon-arrow-right-line-right"></i></a>
+            </div>
+            {{-- addmission form --}}
             {{-- <div class="col-lg-4 order-2 oder-lg-1">
                 <aside class="edu-course-sidebar">
                     <!-- Start Widget Wrapper  -->
@@ -638,12 +645,12 @@
                 </div>
             </div> --}}
               <!-- Start About Area  -->
-        <div class="eduvibe-home-five-about edu-about-area about-style-6 edu-section-gap bg-color-white">
+        <div class="eduvibe-home-five-about admission edu-about-area about-style-6  bg-color-white">
             <div class="container eduvibe-animated-shape">
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-5 col-lg-6">
-                        <div class="about-image-gallery">
-                            <img class="image-1 w-100" src="{{ asset('website/assets/images/about/about-08/about-image-09.jpg')}}" alt="About Images">
+                        <div class="about-image-gallery"> 
+                            <img class="image-1 w-100" src="{{ asset('website/assets/images/about/about-08/admission.png')}}" alt="About Images">
                             <div class="badge-icon">
                                 <div class="badge-inner">
                                     <img src="{{ asset('website/assets/images/about/about-08/badge.png')}}" alt="Icon Images">
@@ -1078,10 +1085,10 @@
                 </div>
             </div>
         </div>
-
-        
         {{--end  Residencial batches--}}
-      
+      {{-- start admission form --}}
+        
+      {{-- end admission form --}}
     
     </div>
 </div>
