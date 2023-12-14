@@ -146,7 +146,7 @@
 
                             <div class="hover-bottom-content">
                                 <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
+                                    <a class="edu-btn btn-medium btn-white" href="#">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
                                 </div>
                                 <div class="author-meta">
                                     <div class="author-thumb">
@@ -245,7 +245,7 @@
 
                             <div class="hover-bottom-content">
                                 <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
+                                    <a class="edu-btn btn-medium btn-white" href="#">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
                                 </div>
                                 <div class="author-meta">
                                     <div class="author-thumb">
@@ -341,7 +341,7 @@
 
                             <div class="hover-bottom-content">
                                 <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
+                                    <a class="edu-btn btn-medium btn-white" href="#">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
                                 </div>
                                 <div class="author-meta">
                                     <div class="author-thumb">
@@ -437,7 +437,7 @@
     
                                 <div class="hover-bottom-content">
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
+                                        <a class="edu-btn btn-medium btn-white" href="#">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
                                     </div>
                                     <div class="author-meta">
                                         <div class="author-thumb">
@@ -532,7 +532,7 @@
 
                             <div class="hover-bottom-content">
                                 <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
+                                    <a class="edu-btn btn-medium btn-white" href="#">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
                                 </div>
                                 <div class="author-meta">
                                     <div class="author-thumb">
@@ -626,7 +626,7 @@
         
                                     <div class="hover-bottom-content">
                                         <div class="read-more-btn">
-                                            <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
+                                            <a class="edu-btn btn-medium btn-white" href="#">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
                                         </div>
                                         <div class="author-meta">
                                             <div class="author-thumb">
