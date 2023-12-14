@@ -8,7 +8,7 @@
                             <div class="edu-footer-widget">
                                 <div class="logo">
                                     <a href="{{url('/')}}">
-                                        <img class="logo-light" src="{{ asset('website/assets/images/logo/LOGONEW.png')}}" alt="Site Logo">
+                                        <img class="logo-light" src="{{ asset('website/assets/images/logo/LOGOfinal.png')}}" alt="Site Logo">
                                     </a>
                                 </div>
                                 <p class="description">Upadhye Best science colleges in Nashik Today Nashik has become an industrial center and in the last six decades the eternal Godavari has silently watched a great change.</p>
