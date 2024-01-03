@@ -1,7 +1,27 @@
 @extends('website.layout.master')
 @section('content')
 <section>
-      
+      <style>
+    .edu-card {
+        height: 100%; /* Set a fixed height for the card */
+    }
+
+    .thumbnail {
+        position: relative;
+        overflow: hidden;
+        height: 200px; /* Set a fixed height for the thumbnail/image */
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 15px; /* Add padding to the content for better spacing */
+    }
+</style>
 
         <!-- Start Sldier Area  -->
         {{-- <div class="slider-area banner-style-3 bg-image">
@@ -57,12 +77,16 @@
        
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{{ asset('website/assets/images/banner/banner-03/BANNER1.png')}}" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
+              @foreach($dataSlider as $key => $slider)
+    <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+        <img src="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $slider->image }}" class="d-block w-100" alt="{{ $slider->rank_no }}">
+    </div>
+@endforeach
+
+
+              {{--<div class="carousel-item">
                 <img src="{{ asset('website/assets/images/banner/banner-03/BANNER2.jpg')}}" class="d-block w-100" alt="...">
-              </div>
+              </div>--}}
               {{-- <div class="carousel-item">
                 <img src="{{ asset('website/assets/images/banner/banner-03/BANNER1.png')}}" class="d-block w-100" alt="...">
               </div> --}}
@@ -479,12 +503,13 @@
 
                     <div class="row g-5 mt--25">
                         <!-- Start Single Card  -->
+                       @foreach ($resourcesData as $key => $courses)
                         <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="edu-card card-type-1 bg-white radius-small">
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/neet.jpg')}}" alt="Course Meta">
+                                            <img class="w-100" src="{{ Config::get('DocumentConstant.RESOURCES_AND_INSIGHTS_VIEW') }}{{ $courses->image }}" alt="Course Meta">
                                         </a>
                                         <div class="top-position status-group left-top">
                                             {{-- <span class="eduvibe-status status-01">Intermediate</span> --}}
@@ -497,10 +522,9 @@
                                         <ul class="edu-meta meta-01">
                                             {{-- <li><i class="icon-file-list-4-line"></i>35 Lessons</li>
                                             <li><i class="icon-time-line"></i>18h 15m 44s</li> --}}
-                                            <li><i class="icon-time-line"></i>2 years intensive coaching</li>
+                                            <li><i class="icon-time-line"></i>{{$courses->duration}}</li>
                                         </ul>
-                                        <h6 class="title"><a href="course-details.html">Medicine:NEET & MHT-CET Theory+Entrance</a>
-                                        </h6>
+                                        <h6 class="title"><a href="course-details.html">{{$courses->title}}</a></h6>
                                         <div class="edu-rating rating-default">
                                             <div class="rating">
                                                 <i class="icon-Star"></i>
@@ -509,7 +533,7 @@
                                                 <i class="icon-Star"></i>
                                                 <i class="icon-Star"></i>
                                             </div>
-                                            <span class="rating-count">(18 Review)</span>
+                                            <span class="rating-count">({{$courses->review}})</span>
                                         </div>
                                         {{-- <div class="card-bottom">
                                             <div class="badge-transparent">Free</div>
@@ -521,245 +545,8 @@
                                 </div>
                             </div>
                         </div>
+                    @endforeach
                         <!-- End Single Card  -->
-
-                        <!-- Start Single Card  -->
-                        <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                            <div class="edu-card card-type-1 bg-white radius-small">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/jee.jpg')}}" alt="Course Meta">
-                                        </a>
-                                        <div class="top-position status-group left-top">
-                                            {{-- <span class="eduvibe-status status-01">Advanced</span> --}}
-                                        </div>
-                                        {{-- <div class="wishlist-top-right">
-                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                        </div> --}}
-                                    </div>
-                                    <div class="content">
-                                        <ul class="edu-meta meta-01">
-                                            {{-- <li><i class="icon-file-list-4-line"></i>48 Lessons</li>
-                                            <li><i class="icon-time-line"></i>15h 38m 14s</li> --}}
-                                            <li><i class="icon-time-line"></i>2 years intensive coaching</li>
-                                        </ul>
-                                        <h6 class="title"><a href="course-details.html">Engineering:JEE-Mains & MHT-CET-Theory+Entrance</a>
-                                        </h6>
-                                        <div class="edu-rating rating-default">
-                                            <div class="rating">
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                            </div>
-                                            <span class="rating-count">(38 Review)</span>
-                                        </div>
-                                        {{-- <div class="card-bottom">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$29.00</div>
-                                                <div class="price old-price">$39.00</div>
-                                            </div>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-account-circle-line"></i>65 Students</li>
-                                            </ul>
-                                        </div> --}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Card  -->
-
-                        <!-- Start Single Card  -->
-                        <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                            <div class="edu-card card-type-1 bg-white radius-small">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/jee_mains_advance.jpg')}}" alt="Course Meta">
-                                        </a>
-                                        <div class="top-position status-group left-top">
-                                            {{-- <span class="eduvibe-status status-01">Basic</span> --}}
-                                        </div>
-                                        {{-- <div class="wishlist-top-right">
-                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                        </div> --}}
-                                    </div>
-                                    <div class="content">
-                                        <ul class="edu-meta meta-01">
-                                            {{-- <li><i class="icon-file-list-4-line"></i>80 Lessons</li>
-                                            <li><i class="icon-time-line"></i>23h 13m 41s</li> --}}
-                                            <li><i class="icon-time-line"></i>2 years intensive programme</li>
-                                        </ul>
-                                        <h6 class="title"><a href="course-details.html">Engineering:JEE-Advanced(IIT-JEE)-Theory+Entrance</a>
-                                        </h6>
-                                        <div class="edu-rating rating-default">
-                                            <div class="rating">
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                            </div>
-                                            <span class="rating-count">(28 Review)</span>
-                                        </div>
-                                        {{-- <div class="card-bottom">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$59.00</div>
-                                                <div class="price old-price">$69.00</div>
-                                            </div>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-account-circle-line"></i>42 Students</li>
-                                            </ul>
-                                        </div> --}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Card  -->
-
-                        <!-- Start Single Card  -->
-                        {{-- <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
-                            <div class="edu-card card-type-1 bg-white radius-small">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/course-04.jpg')}}" alt="Course Meta">
-                                        </a>
-                                        <div class="top-position status-group left-top">
-                                            <span class="eduvibe-status status-01">Intermediate</span>
-                                        </div>
-                                        <div class="wishlist-top-right">
-                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="edu-meta meta-01">
-                                            <li><i class="icon-file-list-4-line"></i>31 Lessons</li>
-                                            <li><i class="icon-time-line"></i>14h 40m 20s</li>
-                                        </ul>
-                                        <h6 class="title"><a href="course-details.html">Education Makes A Person A Responsible
-                                                Citizen</a>
-                                        </h6>
-                                        <div class="edu-rating rating-default">
-                                            <div class="rating">
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                            </div>
-                                            <span class="rating-count">(23 Review)</span>
-                                        </div>
-                                        <div class="card-bottom">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$49.00</div>
-                                                <div class="price old-price">$59.00</div>
-                                            </div>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-account-circle-line"></i>46 Students</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!-- End Single Card  -->
-
-                        <!-- Start Single Card  -->
-                        {{-- <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
-                            <div class="edu-card card-type-1 bg-white radius-small">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/course-05.jpg')}}" alt="Course Meta">
-                                        </a>
-                                        <div class="top-position status-group left-top">
-                                            <span class="eduvibe-status status-01">Advanced</span>
-                                        </div>
-                                        <div class="wishlist-top-right">
-                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="edu-meta meta-01">
-                                            <li><i class="icon-file-list-4-line"></i>36 Lessons</li>
-                                            <li><i class="icon-time-line"></i>20h 25m 28s</li>
-                                        </ul>
-                                        <h6 class="title"><a href="course-details.html">Building A Better World One Student At A
-                                                Time</a>
-                                        </h6>
-                                        <div class="edu-rating rating-default">
-                                            <div class="rating">
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                            </div>
-                                            <span class="rating-count">(31 Review)</span>
-                                        </div>
-                                        <div class="card-bottom">
-                                            <div class="badge-transparent">Free</div>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-account-circle-line"></i>91 Students</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!-- End Single Card  -->
-
-                        <!-- Start Single Card  -->
-                        {{-- <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
-                            <div class="edu-card card-type-1 bg-white radius-small">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="course-details.html">
-                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/course-06.jpg')}}" alt="Course Meta">
-                                        </a>
-                                        <div class="top-position status-group left-top">
-                                            <span class="eduvibe-status status-01">Basic</span>
-                                        </div>
-                                        <div class="wishlist-top-right">
-                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <ul class="edu-meta meta-01">
-                                            <li><i class="icon-file-list-4-line"></i>21 Lessons</li>
-                                            <li><i class="icon-time-line"></i>12h 45m 50s</li>
-                                        </ul>
-                                        <h6 class="title"><a href="course-details.html">Education is About Forming Faithful
-                                                Disciples</a>
-                                        </h6>
-                                        <div class="edu-rating rating-default">
-                                            <div class="rating">
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                            </div>
-                                            <span class="rating-count">(35 Review)</span>
-                                        </div>
-                                        <div class="card-bottom">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$79.00</div>
-                                                <div class="price old-price">$89.00</div>
-                                            </div>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-account-circle-line"></i>22 Students</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-                        <!-- End Single Card  -->
-                    </div>
 
                     <div class="row">
                         <div class="col-lg-12">
@@ -1042,13 +829,14 @@
         <div class="row row--20">
 
             <!-- Start Instructor Grid  -->
+            @foreach ($serviceDetailsData as $key => $comitee)
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                 <div class="edu-instructor-grid edu-instructor-1 edu-instructor-1">
                     <div class="edu-instructor">
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="instructor-profile.html">
-                                    <img src="{{ asset('website/assets/images/instructor/instructor-01/instructor-1.jpg')}}" alt="team images">
+                                    <img src="{{ Config::get('DocumentConstant.SERVICES_VIEW') }}{{$comitee->image}}')}}" alt="{{$comitee->image}}')}}">
                                 </a>
                             </div>
                             <div class="team-share-info">
@@ -1059,11 +847,12 @@
                         </div>
                     </div>
                     <div class="edu-instructor-info">
-                        <h5 class="title"><a href="instructor-profile.html">Mrs.P.R.Upadhye</a></h5>
-                        <span class="desc">Principle</span>
+                        <h5 class="title"><a href="instructor-profile.html">{{$comitee->name}}</a></h5>
+                        <span class="desc">{{$comitee->role}}</span>
                     </div>
                 </div>
             </div>
+            @endforeach
             <!-- End Instructor Grid  -->
 
             <!-- Start Instructor Grid  -->
@@ -1587,11 +1376,12 @@
                         <div class="resizer"></div>
 
                         <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
+                        @foreach($galleryDetailsData as $key=> $gallery)
+                        <a href="{{ Config::get('DocumentConstant.SLIDER_VIEW') }}{{ $gallery->image }}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
                             <div class="edu-gallery-grid">
                                 <div class="inner">
                                     <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE.jpg')}}" alt="Portfolio Images">
+                                        <img class="w-100" src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $gallery->image }}" alt="Portfolio Images">
                                     </div>
                                 </div>
 
@@ -1608,9 +1398,10 @@
                             </div>
 
                         </a>
+                        @endforeach
                         <!-- End Gallery Grid  -->
 
-                        <!-- Start Gallery Grid  -->
+                       {{--<!-- Start Gallery Grid  -->
                         <a href="{{ asset('website/assets/images/event/event-02/CAMPUS_LIFE_1.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
                             <div class="edu-gallery-grid">
                                 <div class="inner">
@@ -1800,7 +1591,7 @@
                             </div>
 
                         </a>
-                        <!-- End Gallery Grid  -->
+                        <!-- End Gallery Grid  -->--}}
                     </div>
                 </div>
             </div>
