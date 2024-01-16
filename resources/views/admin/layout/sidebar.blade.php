@@ -26,7 +26,66 @@
             </a>
         </li>
 
-        <!-- <li class="@if (request()->is('list-solution*') || request()->is('list-our-solutions*')) {{ 'nav-item active' }} @else {{ 'nav-item' }} @endif">
+       
+
+
+        <li class="@if (request()->is('list-services*') || request()->is('list-services*')) {{ 'nav-item active' }} @else  {{ 'nav-item' }} @endif">
+            <a class="nav-link" data-toggle="collapse" href="#services" aria-expanded="false" aria-controls="services">
+                <i class="fa fa-server menu-icon"></i>
+                <span class="menu-title">Comitee</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="services">
+                <ul class="nav flex-column sub-menu">
+
+                    
+                    <li class="nav-item d-none d-lg-block"><a
+                            class="@if (request()->is('list-comitee-details*')) {{ 'nav-link active' }} @else  {{ 'nav-link' }} @endif"
+                            href="{{ route('list-comitee-details') }}">Comitee Details</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+<li class="@if (request()->is('list-campus*') || request()->is('list-campus*')) {{ 'nav-item active' }} @else  {{ 'nav-item' }} @endif">
+            <a class="nav-link" data-toggle="collapse" href="#campus" aria-expanded="false" aria-controls="services">
+                <i class="fa fa-server menu-icon"></i>
+                <span class="menu-title">Campus</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="campus">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item d-none d-lg-block"><a
+                            class="@if (request()->is('list-campus*')) {{ 'nav-link active' }} @else  {{ 'nav-link' }} @endif"
+                            href="{{ route('list-campus') }}">Campus</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block"><a
+                            class="@if (request()->is('list-achievers*')) {{ 'nav-link active' }} @else  {{ 'nav-link' }} @endif"
+                            href="{{ route('list-achievers') }}">Achievers</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        
+        <li class="{{ request()->is('list-courses*') ? 'nav-item active' : 'nav-item' }}">
+            <a class="nav-link" data-toggle="collapse" href="#master" aria-expanded="false" aria-controls="master">
+                <i class="fa fa-th-large menu-icon"></i>
+                <span class="menu-title">Courses</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="master">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item d-none d-lg-block"><a
+                            class="@if (request()->is('list-courses*')) {{ 'nav-link active' }} @else  {{ 'nav-link' }} @endif"
+                            href="{{ route('list-courses') }}">Courses</a></li>
+                    <li class="nav-item d-none d-lg-block"><a
+                            class="@if (request()->is('list-course-details*')) {{ 'nav-link active' }} @else {{ 'nav-link' }} @endif"
+                            href="{{ route('list-course-details') }}">Courses Details</a></li>
+                    
+                </ul>
+            </div>
+        </li>
+
+ <!-- <li class="@if (request()->is('list-solution*') || request()->is('list-our-solutions*')) {{ 'nav-item active' }} @else {{ 'nav-item' }} @endif">
             <a class="nav-link" data-toggle="collapse" href="#our_olutions" aria-expanded="false"
                 aria-controls="our_olutions">
                 <i class="fa fa-users menu-icon"></i>
@@ -51,42 +110,6 @@
         </li> -->
 
 
-        <li class="@if (request()->is('list-services*') || request()->is('list-service-details*')) {{ 'nav-item active' }} @else  {{ 'nav-item' }} @endif">
-            <a class="nav-link" data-toggle="collapse" href="#services" aria-expanded="false" aria-controls="services">
-                <i class="fa fa-server menu-icon"></i>
-                <span class="menu-title">Comitee</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="services">
-                <ul class="nav flex-column sub-menu">
-
-                    <!-- <li class="nav-item d-none d-lg-block"><a
-                            class="@if (request()->is('list-services*')) {{ 'nav-link active' }} @else  {{ 'nav-link' }} @endif"
-                            href="{{ route('list-services') }}">Comitee</a></li> -->
-                    <li class="nav-item d-none d-lg-block"><a
-                            class="@if (request()->is('list-service-details*')) {{ 'nav-link active' }} @else  {{ 'nav-link' }} @endif"
-                            href="{{ route('list-service-details') }}">Comitee Details</a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-
-
-        <li class="{{ request()->is('list-resource-and-insights*') ? 'nav-item active' : 'nav-item' }}">
-            <a class="nav-link" data-toggle="collapse" href="#master" aria-expanded="false" aria-controls="master">
-                <i class="fa fa-th-large menu-icon"></i>
-                <span class="menu-title">Courses</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="master">
-                <ul class="nav flex-column sub-menu">
-
-                    <li class="nav-item d-none d-lg-block"><a class="nav-link"
-                            href="{{ route('list-resource-and-insights') }}">Courses Details</a></li>
-                </ul>
-            </div>
-        </li>
-
 
         <li class="@if (request()->is('list-slide*') || request()->is('list-additional-solutions*')) {{ 'nav-item active' }} @else {{ 'nav-item' }} @endif">
             <a class="nav-link" data-toggle="collapse" href="#home" aria-expanded="false" aria-controls="home">
@@ -100,9 +123,8 @@
                             class="@if (request()->is('list-slide*')) {{ 'nav-link active' }} @else {{ 'nav-link' }} @endif"
                             href="{{ route('list-slide') }}">Slider</a></li>
 
-                    <li class="nav-item d-none d-lg-block"><a
-                            class="@if (request()->is('list-additional-solutions*')) {{ 'nav-link active' }} @else {{ 'nav-link' }} @endif"
-                            href="{{ route('list-additional-solutions') }}">Additional Solutions</a></li>
+                    <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link"
+                            href="{{ route('list-resource-and-insights') }}">Resource And Insights</a></li> -->
 
                 </ul>
             </div>
@@ -115,10 +137,10 @@
             </a>
         </li>
 
-        <li class="{{ request()->is('list-subscriber*') ? 'nav-item active' : 'nav-item' }}">
-            <a class="nav-link" href="{{ route('list-subscriber') }}">
+        <li class="{{ request()->is('list-registration*') ? 'nav-item active' : 'nav-item' }}">
+            <a class="nav-link" href="{{ route('list-registration') }}">
                 <i class="fas fa-window-restore menu-icon"></i>
-                <span class="menu-title">Subscriber From Website</span>
+                <span class="menu-title">Registration From Website</span>
             </a>
         </li>
 
@@ -137,8 +159,8 @@
                             href="{{ route('list-contactus-form') }}">Contact Us List</a></li>
 
                     <li class="nav-item d-none d-lg-block"><a
-                            class="@if (request()->is('list-about-us-contactus*')) {{ 'nav-link active' }} @else {{ 'nav-link' }} @endif"
-                            href="{{ route('list-about-us-contactus') }}">About Us Contact List</a></li>
+                            class="@if (request()->is('list-subscribers*')) {{ 'nav-link active' }} @else {{ 'nav-link' }} @endif"
+                            href="{{ route('list-subscribers') }}">Subscribers</a></li>
                 </ul>
             </div>
         </li>

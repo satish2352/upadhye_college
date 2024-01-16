@@ -63,35 +63,53 @@
                     <span class="pre-title">Contact Us</span>
                     <h3 class="title">Send Us A Message</h3>
                 </div>
+@if(session('msg'))
+    <div id="autoCloseAlert" class="alert alert-danger">
+        {{ session('msg') }}
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                var alert = document.getElementById('autoCloseAlert');
+                alert.style.display = 'none';
+            }, 3000); // 5000 milliseconds = 5 seconds, adjust as needed
+        });
+    </script>
+@endif
 
-                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Name*">
-                        </div>
+                <form   action="{{ route('add-contact') }}" method="POST">
+                @csrf
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" name="full_name" id="name" placeholder="Name*">
                     </div>
+                </div>
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email*">
-                        </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email*">
                     </div>
+                </div>
 
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" name="subject" id="subject" placeholder="Subject">
-                        </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" name="subject" id="subject" placeholder="Subject">
                     </div>
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" placeholder="Your comment"></textarea>
-                        </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" id="message" placeholder="Your comment"></textarea>
                     </div>
-                    <div class="col-lg-12">
-                        <button class="rn-btn edu-btn" type="submit">
-                            <span>Submit Now</span><i class="icon-arrow-right-line-right"></i></button>
-                    </div>
-                </form>
+                </div>
+
+                <div class="col-lg-12">
+                    <input class="rn-btn edu-btn" type="submit">
+                        <span></span>
+                    </input>
+                </div>
+            </form>
+
             </div>
         </div>
         <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
@@ -132,8 +150,8 @@
                         </div>
                         <div class="content">
                             <h6 class="title">Contact</h6>
-                            <p><span class="subtitle">Mobile: </span><a href="tel:(+88)-1990-6886"> +91 7888043137</a></p>
-                            <p><span class="subtitle">Mobile: </span><a href="tel:1800-1102">+91 7722071300</a></p>
+                            <p><span class="subtitle">Mobile: </span><a href="tel:(+88)-1990-6886">{{ $website_contact_details[0]['contact_one'] }}</a></p>
+                            <p><span class="subtitle">Mobile: </span><a href="tel:1800-1102">{{ $website_contact_details[0]['contact_one'] }}</a></p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +165,7 @@
                         </div>
                         <div class="content">
                             <h6 class="title">Address</h6>
-                            <p>Near Bafna Warehouse, Pimpri Sayyed, <br> Ozar Road, Nashik - 422 003.</p>
+                            <p>{{ $website_contact_details[0]['address'] }}
                         </div>
                     </div>
                 </div>

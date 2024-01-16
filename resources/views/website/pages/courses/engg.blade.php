@@ -69,20 +69,20 @@
 
         <div class="row g-5 mt--10">
 
-        
+                @foreach($combinedData as $data)
                <!-- Start Single Card  -->
                <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                 <div class="edu-card card-type-3 radius-small">
                     <div class="inner">
                         <div class="thumbnail">
                             <a href="course-details.html">
-                                <img class="w-100" src="{{ asset('website/assets/images/course/course-01/2ENGINEERING.jpg')}}" alt="Course Thumb">
+                                <img class="w-100" src="{{ Config::get('DocumentConstant.ADDITIONAL_SOLUTIONS_VIEW') }}{{ $data->image}}" alt="Course Thumb">
                             </a>
                             <div class="wishlist-top-right">
                                 <button class="wishlist-btn"><i class="icon-Heart"></i></button>
                             </div>
                             <div class="top-position status-group left-bottom">
-                                <span class="eduvibe-status status-03">ENGINEERING</span>
+                                <span class="eduvibe-status status-03">{{$data->service_name}}</span>
                             </div>
                         </div>
                         <div class="content">
@@ -99,7 +99,7 @@
                                     {{-- <li><i class="icon-file-list-3-line"></i>29 Lessons</li> --}}
                                 </ul>
                             </div>
-                            <h6 class="title"><a href="#">IIT-JEE (ADVANCED) </a>
+                            <h6 class="title"><a href="#">{{$data->title}} </a>
                             </h6>
                             <div class="card-bottom">
                                 <div class="price-list price-style-02">
@@ -133,9 +133,7 @@
 
                             {{-- <h6 class="title"><a href="course-details.html">IIT-JEE (ADVANCED) </a></h6> --}}
 
-                            <p class="description">Based on a written test that will be objective & the syllabus is Science & Maths of Class IX & X Board.
-
-                                Upadhye Engineering Division helps students to develop a solid foundation for competitive examinations like JEE (Main + Advanced), SAT, BITSAT, VITEEE, etc. It is one of Nashik’s best IIT JEE Main & Advanced Coaching Classes.</p>
+                            <p class="description">{{$data->long_description}}</p>
 
                             {{-- <div class="price-list price-style-02">
                                 <div class="price current-price">$29.99</div>
@@ -164,198 +162,10 @@
                     </div>
                 </div>
                 </div>
+            @endforeach
             <!-- End Single Card  -->
 
-                <!-- Start Single Card  -->
-                <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <div class="edu-card card-type-3 radius-small">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="course-details.html">
-                                    <img class="w-100" src="{{ asset('website/assets/images/course/course-01/3ENGINEERING.jpg')}}" alt="Course Thumb">
-                                </a>
-                                <div class="wishlist-top-right">
-                                    <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                </div>
-                                <div class="top-position status-group left-bottom">
-                                    <span class="eduvibe-status status-03">ENGINEERING</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="card-top">
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                {{-- <img src="{{ asset('website/assets/images/instructor/instructor-small/instructor-2.jpg')}}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span> --}}
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        {{-- <li><i class="icon-file-list-3-line"></i>29 Lessons</li> --}}
-                                    </ul>
-                                </div>
-                                <h6 class="title"><a href="#">JEE (MAINS) </a>
-                                </h6>
-                                <div class="card-bottom">
-                                    <div class="price-list price-style-02">
-                                        {{-- <div class="price current-price">$29.99</div>
-                                        <div class="price old-price">$39.99</div> --}}
-                                    </div>
-                                    <div class="edu-rating rating-default">
-                                        <div class="rating">
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                            <i class="icon-Star"></i>
-                                        </div>
-                                        {{-- <span class="rating-count">(18)</span> --}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card-hover-action">
-                            <div class="hover-content">
-                                <div class="content-top">
-                                    <div class="top-status-bar">
-                                        {{-- <span class="eduvibe-status status-03">XI Class</span> --}}
-                                    </div>
-                                    <div class="top-wishlist-bar">
-                                        {{-- <button class="wishlist-btn"><i class="icon-Heart"></i></button> --}}
-                                    </div>
-                                </div>
-    
-                                {{-- <h6 class="title"><a href="course-details.html">JEE (MAINS)</a></h6> --}}
-    
-                                <p class="description">Based on a written test that will be objective & the syllabus is Science & Maths of Class IX & X Board.
-    
-                                    Upadhye Engineering Division helps students to develop a solid foundation for competitive examinations like JEE (Main + Advanced), SAT, BITSAT, VITEEE, etc. It is one of Nashik’s best IIT JEE Main & Advanced Coaching Classes.</p>
-    
-                                {{-- <div class="price-list price-style-02">
-                                    <div class="price current-price">$29.99</div>
-                                    <div class="price old-price">$39.99</div>
-                                </div> --}}
-    
-                                <div class="hover-bottom-content">
-                                    <div class="read-more-btn">
-                                        <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                    </div>
-                                    <div class="author-meta">
-                                        <div class="author-thumb">
-                                            <a href="instructor-profile.html">
-                                                {{-- <img src="{{ asset('website/assets/images/instructor/instructor-small/instructor-2.jpg')}}" alt="Author Images">
-                                                <span class="author-title">Nancy Phipps</span> --}}
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <ul class="edu-meta meta-02">
-                                        {{-- <li><i class="icon-file-list-3-line"></i>29 Lessons</li> --}}
-                                    </ul>
-                                </div>
-                                
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Card  -->
-            <!-- Start Single Card  -->
-            <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                <div class="edu-card card-type-3 radius-small">
-                    <div class="inner">
-                        <div class="thumbnail">
-                            <a href="course-details.html">
-                                <img class="w-100" src="{{ asset('website/assets/images/course/course-01/1ENGINEERING.jpg')}}" alt="Course Thumb">
-                            </a>
-                            <div class="wishlist-top-right">
-                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                            </div>
-                            <div class="top-position status-group left-bottom">
-                                <span class="eduvibe-status status-03">ENGINEERING</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="card-top">
-                                <div class="author-meta">
-                                    <div class="author-thumb">
-                                        <a href="instructor-profile.html">
-                                            {{-- <img src="{{ asset('website/assets/images/instructor/instructor-small/instructor-2.jpg')}}" alt="Author Images">
-                                            <span class="author-title">Nancy Phipps</span> --}}
-                                        </a>
-                                    </div>
-                                </div>
-                                <ul class="edu-meta meta-02">
-                                    {{-- <li><i class="icon-file-list-3-line"></i>29 Lessons</li> --}}
-                                </ul>
-                            </div>
-                            <h6 class="title"><a href="#">MHT-CET </a>
-                            </h6>
-                            <div class="card-bottom">
-                                <div class="price-list price-style-02">
-                                    {{-- <div class="price current-price">$29.99</div>
-                                    <div class="price old-price">$39.99</div> --}}
-                                </div>
-                                <div class="edu-rating rating-default">
-                                    <div class="rating">
-                                        <i class="icon-Star"></i>
-                                        <i class="icon-Star"></i>
-                                        <i class="icon-Star"></i>
-                                        <i class="icon-Star"></i>
-                                        <i class="icon-Star"></i>
-                                    </div>
-                                    {{-- <span class="rating-count">(18)</span> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-hover-action">
-                        <div class="hover-content">
-                            <div class="content-top">
-                                <div class="top-status-bar">
-                                    {{-- <span class="eduvibe-status status-03">XI Class</span> --}}
-                                </div>
-                                <div class="top-wishlist-bar">
-                                    {{-- <button class="wishlist-btn"><i class="icon-Heart"></i></button> --}}
-                                </div>
-                            </div>
-
-                            {{-- <h6 class="title"><a href="course-details.html">MHT-CET</a></h6> --}}
-
-                            <p class="description">Based on a written test that will be objective & the syllabus is Science & Maths of Class IX & X Board.
-
-                                Upadhye Engineering Division helps students to develop a solid foundation for competitive examinations like JEE (Main + Advanced), SAT, BITSAT, VITEEE, etc. It is one of Nashik’s best IIT JEE Main & Advanced Coaching Classes.</p>
-
-                            {{-- <div class="price-list price-style-02">
-                                <div class="price current-price">$29.99</div>
-                                <div class="price old-price">$39.99</div>
-                            </div> --}}
-
-                            <div class="hover-bottom-content">
-                                <div class="read-more-btn">
-                                    <a class="edu-btn btn-medium btn-white" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                </div>
-                                <div class="author-meta">
-                                    <div class="author-thumb">
-                                        <a href="instructor-profile.html">
-                                            {{-- <img src="{{ asset('website/assets/images/instructor/instructor-small/instructor-2.jpg')}}" alt="Author Images">
-                                            <span class="author-title">Nancy Phipps</span> --}}
-                                        </a>
-                                    </div>
-                                </div>
-                                <ul class="edu-meta meta-02">
-                                    {{-- <li><i class="icon-file-list-3-line"></i>29 Lessons</li> --}}
-                                </ul>
-                            </div>
-                            
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Card  -->
+              
 
             {{-- <div class="col-lg-12 mt--60">
                 <nav>

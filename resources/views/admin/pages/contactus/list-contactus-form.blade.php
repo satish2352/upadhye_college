@@ -28,10 +28,10 @@
                                                     <th>Sr. No.</th>
                                                     <th>Full Name</th>
                                                     <th>Email</th>
-                                                    <th>Mobile Number</th>
+                                                    {{-- <th>Mobile Number</th> --}}
                                                     <th>Subject</th>
                                                     <th>Message</th>
-                                                    <th>Action</th>
+                                                    <!-- <th>Comment</th> -->
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -40,7 +40,7 @@
                                                         <td>{{ $loop->iteration }}</td>
                                                         <td>{{ strip_tags($item->full_name) }}</td>
                                                         <td>{{ strip_tags($item->email) }}</td>
-                                                        <td>{{ strip_tags($item->mobile_number) }}</td>
+                                                        {{--<td>{{ strip_tags($item->mobile_number) }}</td>--}}
                                                         <td>{{ strip_tags($item->subject) }}</td>
                                                         <td>{{ strip_tags($item->message) }}</td>
                                                         <td>

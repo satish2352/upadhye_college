@@ -152,7 +152,7 @@ public function addAll($request){
     public function deleteById($id){
             try {
                 $deleteDataById = Slider::find($id);
-                if ($deleteData) {
+                if ($deleteDataById) {
                     if (file_exists_view(Config::get('DocumentConstant.SLIDER_DELETE') . $deleteDataById->image)){
                         removeImage(Config::get('DocumentConstant.SLIDER_DELETE') . $deleteDataById->image);
                     }

@@ -32,6 +32,7 @@
                                             <img src="{{ Config::get('DocumentConstant.GALLERY_VIEW') }}{{ $showData->image }}"
                                                 style="width:300px; height:150px;" alt=" {{ strip_tags($showData['rank_no']) }} Image"/>
                                         </div>
+                                       
                                     </div>
                                 </div>
                             </div>

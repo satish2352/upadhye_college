@@ -10,5 +10,5 @@ class ContactUs extends Model
     use HasFactory;
     protected $table = 'contactus_form';
     protected $primaryKey = 'id';
-    protected $fillable = ['full_name', 'email','mobile_number','subject','message'];
+    protected $fillable = ['full_name', 'email','subject','message'];
 }

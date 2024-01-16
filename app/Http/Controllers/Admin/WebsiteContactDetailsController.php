@@ -64,6 +64,7 @@ class WebsiteContactDetailsController extends Controller
             //         ->withErrors($validation);
             // } else {
                 $update_data = $this->service->updateAll($request);
+                // dd($update_data);
                 if ($update_data) {
                     $msg = $update_data['msg'];
                     $status = $update_data['status'];

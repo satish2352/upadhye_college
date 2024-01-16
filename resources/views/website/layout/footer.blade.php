@@ -1,6 +1,8 @@
 
         <!-- Start Footer Area  -->
-        <footer class="eduvibe-footer-one edu-footer footer-style-default">
+
+                                
+                <footer class="eduvibe-footer-one edu-footer footer-style-default">
             <div class="footer-top">
                 <div class="container eduvibe-animated-shape">
                     <div class="row g-5">
@@ -13,10 +15,10 @@
                                 </div>
                                 <p class="description">Upadhye Best science colleges in Nashik Today Nashik has become an industrial center and in the last six decades the eternal Godavari has silently watched a great change.</p>
                                 <ul class="social-share">
-                                    <li><a href="#"><i class="icon-Fb"></i></a></li>
-                                    <li><a href="#"><i class="icon-Twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-youtube"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="{{ $website_contact_details[0]['twitter_link'] }}"><i class="icon-Twitter"></i></a></li>
+                                    <li><a href="{{ $website_contact_details[0]['facebook_link'] }}"><i class="icon-Fb"></i></a></li>
+                                    <li><a href="{{ $website_contact_details[0]['youtube_link'] }}"><i class="icon-youtube"></i></a></li>
+                                    <li><a href="{{ $website_contact_details[0]['instagram_link'] }}"><i class="fa-brands fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -58,12 +60,12 @@
                                 <div class="inner">
                                     <div class="widget-information">
                                         <ul class="information-list">
-                                            <li><i class="icon-map-pin-line"></i>Upadhye College Of Science, Near Namdhari Seeds, Bafana Warehouse Road, Ozar Road Adgaon, 422003.
+                                            <li><i class="icon-map-pin-line"></i>{{ $website_contact_details[0]['address'] }}
                                             </li>
-                                            <li><i class="icon-phone-fill"></i><a href="tel::+91 7888043137">+91 7888043137</a></li>
-                                            <li><i class="icon-phone-fill"></i><a href="tel:+91 7722071300">+91 7722071300</a></li>
-                                            <li><i class="icon-phone-fill"></i><a href="tel:+91 9822046000">+91 9822046000</a></li>
-                                            <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:upadhyecampus@gmail.com">upadhyecampus@gmail.com</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel::{{ $website_contact_details[0]['contact_one'] }}">{{ $website_contact_details[0]['contact_one'] }}</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel::{{ $website_contact_details[0]['contact_two'] }}">{{ $website_contact_details[0]['contact_two'] }}</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel::{{ $website_contact_details[0]['contact_three'] }}">{{ $website_contact_details[0]['contact_three'] }}</a></li>
+                                            <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:{{ $website_contact_details[0]['mail_id'] }}">{{ $website_contact_details[0]['mail_id'] }}</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -103,7 +105,6 @@
             </div>
         </footer>
         <!-- End Footer Area  -->
-
     </div>
     <div class="rn-progress-parent">
         <svg class="rn-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">

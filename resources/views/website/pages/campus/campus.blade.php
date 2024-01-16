@@ -1,6 +1,9 @@
 @extends('website.layout.master')
  @section('content')       
 <section>
+<head>
+<meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
     {{-- start breadcrumb --}}
 <div class="edu-breadcrumb-area breadcrumb-style-1 ptb--60 ptb_md--40 ptb_sm--40 bg-image">
     <div class="container eduvibe-animated-shape">
@@ -52,9 +55,9 @@
 
 
 {{-- start campus gallary --}}
-<div class="edu-gallery-grid-area masonary-wrapper-activation edu-section-gap bg-image bg-image--25 overflow-hidden">
+<div class="edu-gallery-grid-area masonary-wrapper-activation edu-section-gap bg-image bg-image--25 overflow-hidden ">
     <div class="wrapper">
-        <div class="container">
+        <div class="container" >
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <div class="section-title text-start">
@@ -63,238 +66,19 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="button-group isotop-filter filters-button-group d-flex justify-content-start justify-content-lg-end">
-                        <button data-filter="*" class="is-checked"><span class="filter-text">All</span></button>
-                        <button data-filter=".cat--1"><span class="filter-text">Trending</span></button>
-                        <button data-filter=".cat--2"><span class="filter-text">Popularity</span></button>
-                        <button data-filter=".cat--3"><span class="filter-text">Featured</span></button>
-                    </div>
+                    <div class="button-group isotop-filter filters-button-group d-flex justify-content-start justify-content-lg-end filter-buttons">
+
+  <button data-filter=".cat--1" data-category="campus" onclick="getData('all', 'all')"><span class="filter-text">All</span></button>
+<button data-filter=".cat--2" data-category="popularity" onclick="getData('popularity', 'popularity')"><span class="filter-text">Popularity</span></button>
+<button data-filter=".cat--3" data-category="trending" onclick="getData('trending', 'trending')"><span class="filter-text">Trending</span></button>
+<button data-filter=".cat--4" data-category="featured" onclick="getData('featured', 'featured')"><span class="filter-text">Featured</span></button>
+</div>
                 </div>
             </div>
+                <div id="routes" data-all="{{ route('all') }}" data-popularity="{{ route('popularity') }}" data-trending="{{ route('trending') }}" data-featured="{{ route('featured') }}"></div>
 
-            <div class="row g-5 mt--5">
-                <div class="col-12">
-                    <div class="gallery-grid-wrapper grid-metro3 mesonry-list overflow-hidden" id="animated-thumbnials">
-                        <div class="resizer"></div>
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_1.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_1.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_2.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_2.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_3.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_3.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_4.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_4.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_5.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--2 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_5.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_6.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_6.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_7.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--2">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_7.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-
-                        <!-- Start Gallery Grid  -->
-                        <a href="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_8.jpg')}}" class="edu-gallery-grid-item grid-metro-item cat--1 cat--3">
-                            <div class="edu-gallery-grid">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <img class="w-100" src="{{ asset('website/assets/images/gallery/gallery-images/CAMPUS_LIFE_8.jpg')}}" alt="Portfolio Images">
-                                    </div>
-                                </div>
-
-                                <div class="zoom-icon">
-                                    <i class="icon-zoom-in-line"></i>
-                                </div>
-                                <div class="hover-action">
-                                    <div class="hover-content">
-                                        <div class="hover-text">
-                                            <h6 class="title">Utiliz Enim Ninim Veniam Quis Exercitation</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </a>
-                        <!-- End Gallery Grid  -->
-                    </div>
-                </div>
-            </div>
+               <div class="row g-5 mt--5 " id="campus_data">
+                
         </div>
     </div>
 </div>
@@ -799,4 +583,71 @@
         </div>
         <!-- End About Area  -->
 </section>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+
+function getData(our_services_master_id, routeName) {
+    $("#campus_data").empty();
+    var routes = $("#routes");
+    var allRoute = routes.data("all");
+    var popularityRoute = routes.data("popularity");
+    var trendingRoute = routes.data("trending");
+    var featuredRoute = routes.data("featured");
+
+    var url;
+    switch (routeName) {
+        case 'all':
+            url = allRoute;
+            break;
+        case 'popularity':
+            url = popularityRoute;
+            break;
+        case 'trending':
+            url = trendingRoute;
+            break;
+        case 'featured':
+            url = featuredRoute;
+            break;
+        default:
+            console.error('Invalid routeName');
+            return;
+    }
+    $.ajax({
+        url: url,
+        method: "POST",
+        data: {
+            "our_services_master_id": our_services_master_id
+        },
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function (data) {
+            console.log(data);
+
+            if (Array.isArray(data) && data.length > 0) {
+                var path = '<?php echo Config::get('DocumentConstant.CAMPUS_GALLERY_VIEW'); ?>';
+
+                $("#campus_data").empty();
+                data.forEach(function (item) {
+                    var html = `
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="card article_card_container h-100">
+                                <img src="` + path + item.image + `" class="card-img-top" alt="${item.title}">
+                                
+                            </div>
+                        </div>
+                    `;
+
+                    $("#campus_data").append(html);
+                });
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error(xhr.responseText);
+        }
+    });
+}
+getData('all','all')
+</script>
+
 @endsection

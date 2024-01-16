@@ -38,6 +38,16 @@ return [
     'GALLERY_DELETE'	         => '/all_web_data/images/gallery/',
     'GALLERY_VIEW'	         => env("FILE_VIEW").'/all_web_data/images/gallery/',
 
-    
+    'CAMPUS_GALLERY_ADD'	         => "/all_web_data/images/home/Gallery/",
+    'CAMPUS_GALLERY_DELETE'	         => '/all_web_data/images/home/gallery/',
+    'CAMPUS_GALLERY_VIEW'	         => env("FILE_VIEW").'/all_web_data/images/home/Gallery/',
+
+    'ACHIEVERS_ADD'	         => "/all_web_data/images/home/ACHIEVERS/",
+    'ACHIEVERS_DELETE'	         => '/all_web_data/images/home/ACHIEVERS/',
+    'ACHIEVERS_VIEW'	         => env("FILE_VIEW").'/all_web_data/images/home/ACHIEVERS/',
+
+ 
+
+
     'DB_BACKUP'	 => "/all_web_data/DBBackup//",
 ];

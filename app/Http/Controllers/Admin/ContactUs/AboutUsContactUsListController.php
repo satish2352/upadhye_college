@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Services\Admin\ContactUs\AboutUsContactUsListServices;
 use Session;
 use Validator;
-
+use App\Models\Subscribers;
 class AboutUsContactUsListController extends Controller
 {
     public function __construct(){
@@ -14,36 +14,35 @@ class AboutUsContactUsListController extends Controller
         }
         public function index(){
             try {
-                $get_contactus= $this->service->getAll();
-                return view('admin.pages.about-us-contactus.list-contactus-form', compact('get_contactus'));
+                $get_contactus=Subscribers::get();
+                return view('admin.pages.about-us-contactus.list-subscribers', compact('get_contactus'));
             } catch (\Exception $e) {
                 return $e;
             }
         }
-        public function show(Request $request) {
-            try {
-                $contactus = $this->service->getById($request->show_id);
-                return view('admin.pages.about-us-contactus.show-contactus-form', compact('contactus'));
-            } catch (\Exception $e) {
-                return $e;
+       
+        public function destroy(Request $request)
+    {
+        try {
+            // dd($request);
+            // Get the id from the request
+            $subscriberId = $request->input('delete_id');
+
+            // Find the subscriber by id and delete
+            $subscriber = Subscribers::find($subscriberId);
+            
+            if ($subscriber) {
+                $subscriber->delete();
+                $msg = 'Subscriber deleted successfully!';
+                $status = 'success';
+            } else {
+                $msg = 'Subscriber not found!';
+                $status = 'error';
             }
+
+            return redirect()->back()->with(compact('msg', 'status'));
+        } catch (\Exception $e) {
+            return redirect()->back()->withInput()->with(['msg' => $e->getMessage(), 'status' => 'error']);
         }
-        public function destroy(Request $request){
-            try {
-                $delete_contactus = $this->service->deleteById($request->delete_id);
-                if ($delete_contactus) {
-                    $msg = $delete_contactus['msg'];
-                    $status = $delete_contactus['status'];
-                    if ($status == 'success') {
-                        return redirect('list-contactus-form')->with(compact('msg', 'status'));
-                    } else {
-                        return redirect()->back()
-                            ->withInput()
-                            ->with(compact('msg', 'status'));
-                    }
-                }
-            } catch (\Exception $e) {
-                return $e;
-            }
-        } 
+    }
 }

@@ -21,6 +21,9 @@
     .content {
         padding: 15px; /* Add padding to the content for better spacing */
     }
+    #imgSize{
+        object-fit: contain;
+    }
 </style>
 
         <!-- Start Sldier Area  -->
@@ -104,9 +107,9 @@
         {{-- end slider --}}
 
          <!-- Start Video Area  -->
-         <div class="edu-workshop-area eduvibe-home-three-video workshop-style-1 edu-section-gap bg-image bg11">
+  <div class="edu-workshop-area eduvibe-home-three-video workshop-style-1 edu-section-gap bg-image bg11">
             <div class="container eduvibe-animated-shape">
-                <div class="row gy-lg-0 gy-5 row--60 align-items-center">
+                <div class="row gy-lg-0 gy-5 row--60 align-items-center" >
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="workshop-inner">
                             <div class="section-title text-white" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -119,8 +122,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="thumbnail video-popup-wrapper">
+                    <div class="col-lg-6 order-1 order-lg-2" style="height:20px">
+                        <div class="thumbnail video-popup-wrapper" style="height: 500px; margin-top: -223px;">
                             <img class="radius-small w-100" src="{{ asset('website/assets/images/videopopup/Group_5.png')}}" alt="About Image">
                             {{-- <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation position-to-top video-popup-activation color-secondary size-60">
                                 <span class="play-icon"></span>
@@ -398,7 +401,7 @@
                                 </div>
                             </div>
                             <div class="read-more-btn mt--30" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <a class="edu-btn" href="about-us-1.html">Know About Us <i class="icon-arrow-right-line-right"></i></a>
+                                <a class="edu-btn" href="{{route('about')}}">Know About Us <i class="icon-arrow-right-line-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -501,30 +504,26 @@
                         </div>
                     </div>
 
+                   
+                        <!-- Start Single Card  -->
                     <div class="row g-5 mt--25">
                         <!-- Start Single Card  -->
-                       @foreach ($resourcesData as $key => $courses)
                         <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <a href="{{route('engg')}}">
                             <div class="edu-card card-type-1 bg-white radius-small">
                                 <div class="inner">
                                     <div class="thumbnail">
-                                        <a href="course-details.html">
-                                            <img class="w-100" src="{{ Config::get('DocumentConstant.RESOURCES_AND_INSIGHTS_VIEW') }}{{ $courses->image }}" alt="Course Meta">
-                                        </a>
+                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/neet.jpg')}}" alt="Course Meta">
                                         <div class="top-position status-group left-top">
-                                            {{-- <span class="eduvibe-status status-01">Intermediate</span> --}}
                                         </div>
-                                        {{-- <div class="wishlist-top-right">
-                                            <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                        </div> --}}
                                     </div>
                                     <div class="content">
                                         <ul class="edu-meta meta-01">
-                                            {{-- <li><i class="icon-file-list-4-line"></i>35 Lessons</li>
-                                            <li><i class="icon-time-line"></i>18h 15m 44s</li> --}}
-                                            <li><i class="icon-time-line"></i>{{$courses->duration}}</li>
+                                            
+                                            <li><i class="icon-time-line"></i>2 years intensive coaching</li>
                                         </ul>
-                                        <h6 class="title"><a href="course-details.html">{{$courses->title}}</a></h6>
+                                        <h6 class="title">Medicine:NEET & MHT-CET Theory+Entrance
+                                        </h6>
                                         <div class="edu-rating rating-default">
                                             <div class="rating">
                                                 <i class="icon-Star"></i>
@@ -533,25 +532,92 @@
                                                 <i class="icon-Star"></i>
                                                 <i class="icon-Star"></i>
                                             </div>
-                                            <span class="rating-count">({{$courses->review}})</span>
+                                            <span class="rating-count">(18 Review)</span>
                                         </div>
-                                        {{-- <div class="card-bottom">
-                                            <div class="badge-transparent">Free</div>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-account-circle-line"></i>47 Students</li>
-                                            </ul>
-                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
+                        </div></a>
+                        <!-- End Single Card  -->
+
+                        <!-- Start Single Card  -->
+                        <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                            <a href="{{route('science')}}">
+                                <div class="edu-card card-type-1 bg-white radius-small">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/jee.jpg')}}" alt="Course Meta">
+                                        <div class="top-position status-group left-top">
+                                        </div>                                     
+                                    </div>
+                                    <div class="content">
+                                        <ul class="edu-meta meta-01">
+                                            <li><i class="icon-time-line"></i>2 years intensive coaching</li>
+                                        </ul>
+                                        <h6 class="title">Engineering:JEE-Mains & MHT-CET-Theory+Entrance
+                                        </h6>
+                                        <div class="edu-rating rating-default">
+                                            <div class="rating">
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                            </div>
+                                            <span class="rating-count">(38 Review)</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div></a>
                         </div>
-                    @endforeach
+                        <!-- End Single Card  -->
+
+                        <!-- Start Single Card  -->
+                        <div class="col-12 col-sm-12 col-xl-4 col-md-6" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                            <a href="{{route('science')}}">
+                            <div class="edu-card card-type-1 bg-white radius-small">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                            <img class="w-100" src="{{ asset('website/assets/images/course/course-01/jee_mains_advance.jpg')}}" alt="Course Meta">
+                                        
+                                        
+                                       
+                                    </div>
+                                    <div class="content">
+                                        <ul class="edu-meta meta-01">
+                                            {{-- <li><i class="icon-file-list-4-line"></i>80 Lessons</li>
+                                            <li><i class="icon-time-line"></i>23h 13m 41s</li> --}}
+                                            <li><i class="icon-time-line"></i>2 years intensive programme</li>
+                                        </ul>
+                                        <h6 class="title">Engineering:JEE-Advanced(IIT-JEE)-Theory+Entrance
+                                        </h6>
+                                        <div class="edu-rating rating-default">
+                                            <div class="rating">
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                                <i class="icon-Star"></i>
+                                            </div>
+                                            <span class="rating-count">(28 Review)</span>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a>
+                        <!-- End Single Card  -->
+
+                        <!-- Start Single Card  -->
+                      
+
                         <!-- End Single Card  -->
 
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="load-more-btn mt--60 text-center">
-                                <a class="edu-btn" href="course-style-3.html">View All Courses<i
+                                <a class="edu-btn" href="{{route('courses')}}">View All Courses<i
                                         class="icon-arrow-right-line-right"></i></a>
                             </div>
                         </div>
@@ -836,7 +902,7 @@
                         <div class="inner">
                             <div class="thumbnail">
                                 <a href="instructor-profile.html">
-                                    <img src="{{ Config::get('DocumentConstant.SERVICES_VIEW') }}{{$comitee->image}}')}}" alt="{{$comitee->image}}')}}">
+                                    <img src="{{ Config::get('DocumentConstant.SERVICES_VIEW') }}{{$comitee->image}}" alt="{{$comitee->image}}')}}">
                                 </a>
                             </div>
                             <div class="team-share-info">
@@ -855,130 +921,6 @@
             @endforeach
             <!-- End Instructor Grid  -->
 
-            <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                <div class="edu-instructor-grid edu-instructor-1">
-                    <div class="edu-instructor">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="instructor-profile.html">
-                                    <img src="{{ asset('website/assets/images/instructor/instructor-01/instructor-2.jpg')}}" alt="team images">
-                                </a>
-                            </div>
-                            <div class="team-share-info">
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu-instructor-info">
-                        <h5 class="title"><a href="instructor-profile.html">Mr.Santosh Tiwari</a></h5>
-                        <span class="desc">Jr.I/C</span>
-                    </div>
-                </div>
-            </div>
-            <!-- End Instructor Grid  -->
-
-            <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                <div class="edu-instructor-grid edu-instructor-1">
-                    <div class="edu-instructor">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="instructor-profile.html">
-                                    <img src="{{ asset('website/assets/images/instructor/instructor-01/instructor-3.jpg')}}" alt="team images">
-                                </a>
-                            </div>
-                            <div class="team-share-info">
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu-instructor-info">
-                        <h5 class="title"><a href="instructor-profile.html">Mr.Thangan Pawar</a></h5>
-                        <span class="desc">Phy.Education</span>
-                    </div>
-                </div>
-            </div>
-            <!-- End Instructor Grid  -->
-
-            <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
-                <div class="edu-instructor-grid edu-instructor-1">
-                    <div class="edu-instructor">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="instructor-profile.html">
-                                    <img src="{{ asset('website/assets/images/instructor/instructor-01/instructor-4.jpg')}}" alt="team images">
-                                </a>
-                            </div>
-                            <div class="team-share-info">
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu-instructor-info">
-                        <h5 class="title"><a href="instructor-profile.html">Mrs.Sheha Patil</a></h5>
-                        <span class="desc">Science I/C</span>
-                    </div>
-                </div>
-            </div>
-            <!-- End Instructor Grid  -->
-
-            <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
-                <div class="edu-instructor-grid edu-instructor-1">
-                    <div class="edu-instructor">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="instructor-profile.html">
-                                    <img src="{{ asset('website/assets/images/instructor/instructor-01/instructor-5.jpg')}}" alt="team images">
-                                </a>
-                            </div>
-                            <div class="team-share-info">
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu-instructor-info">
-                        <h5 class="title"><a href="instructor-profile.html">Mr.Santosh Tiwari</a></h5>
-                        <span class="desc">Exam I/C</span>
-                    </div>
-                </div>
-            </div>
-            <!-- End Instructor Grid  -->
-
-            <!-- Start Instructor Grid  -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
-                <div class="edu-instructor-grid edu-instructor-1">
-                    <div class="edu-instructor">
-                        <div class="inner">
-                            <div class="thumbnail">
-                                <a href="instructor-profile.html">
-                                    <img src="{{ asset('website/assets/images/instructor/instructor-01/instructor-6.jpg')}}" alt="team images">
-                                </a>
-                            </div>
-                            <div class="team-share-info">
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="edu-instructor-info">
-                        <h5 class="title"><a href="instructor-profile.html">Mrs.Yogita Ghodke</a></h5>
-                        <span class="desc">Cultural</span>
-                    </div>
-                </div>
-            </div>
-            <!-- End Instructor Grid  -->
 
             <!-- Start Instructor Grid  -->
             {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="450" data-sal="slide-up" data-sal-duration="800">
@@ -1620,7 +1562,7 @@
         <!-- Start Newsletter Area  -->
         <div class="eduvibe-home-three-newsletter edu-newsletter-area newsletter-style-4 edu-section-gap bg-image">
             <div class="container eduvibe-animated-shape">
-                <div class="row">
+               <div class="row">
                     <div class="col-lg-12">
                         <div class="inner text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
@@ -1628,17 +1570,41 @@
                                 <h3 class="title">Get Every Latest News</h3>
                             </div>
                             <div class="newsletter-form newsletter-form-style-1 mt--60 mt_md--30 mt_sm--30 position-relative">
-                                <div class="input-box text-start">
-                                    <input class="large-input-box" type="email" placeholder="Enter your mail address">
-                                    <div class="mail-icon">
-                                        <i class="icon-mail-open-line"></i>
+                                <form action="{{ route('subscriber') }}" method="POST">
+                                    @csrf
+                                    <div class="input-box text-start">
+                                        <input class="large-input-box" type="email" name="email" placeholder="Enter your mail address">
+                                        <div class="mail-icon">
+                                            <i class="icon-mail-open-line"></i>
+                                        </div>
+                                        <button type="submit" class="edu-btn">Subscribe<i class="icon-arrow-right-line-right"></i></button>
                                     </div>
-                                    <button class="edu-btn">Subscribe<i class="icon-arrow-right-line-right"></i></button>
-                                </div>
+                                </form>
+                                @if (Session::get('status') == 'success')
+
+                                       <center> <div class="col-8 grid-margin">
+                                            <div class="alert alert-success alert-dismissible">
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                                <strong>Success!</strong> {{ Session::get('msg') }}
+                                            </div>
+                                        </div></center>
+
+                                        @endif
+
+                                        @if (Session::get('status') == 'errors')
+                                        <center><div class="col-8 grid-margin">
+                                            <div class="alert alert-danger alert-dismissible">
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                                <strong>Danger!</strong> {!! session('msg') !!}
+                                            </div>
+                                        </div></center>
+                                        @endif
+
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                     <div class="shape-image shape-image-1">
                         <img src="{{ asset('website/assets/images/shapes/shape-04-03.png')}}" alt="Shape Thumb" />

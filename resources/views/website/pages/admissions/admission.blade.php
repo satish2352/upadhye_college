@@ -20,9 +20,6 @@
             </div>
         </div>
 
-
-      
-
         <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
             <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
                 <div class="shape-image shape-image-1">
@@ -47,6 +44,12 @@
         </div>
     </div>
 </div>
+@if(session('msg'))
+    <div class="alert alert-{{ session('success') }}">
+        {{ session('msg') }}
+    </div>
+@endif
+
 <div class="edu-course-area edu-section-gap bg-color-white">
     <div class="container">
         <div class="row g-5">

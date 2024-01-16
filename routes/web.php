@@ -35,15 +35,27 @@ Route::get('/', ['as' => 'index', 'uses' => 'App\Http\Controllers\Website\IndexC
 Route::get('/about', ['as' => 'about', 'uses' => 'App\Http\Controllers\Website\AboutController@about']);
 Route::get('/academic', ['as' => 'academic', 'uses' => 'App\Http\Controllers\Website\AcademicController@academic']);
 Route::get('/contact', ['as' => 'contact', 'uses' => 'App\Http\Controllers\Website\ContactController@contact']);
+Route::post('/add-contact', ['as' => 'add-contact', 'uses' => 'App\Http\Controllers\Website\ContactController@addContactUsForm']);
 Route::get('/admission', ['as' => 'admission', 'uses' => 'App\Http\Controllers\Website\AdmissionController@admission']);
 Route::get('/scholarshipform', ['as' => 'scholarshipform', 'uses' => 'App\Http\Controllers\Website\AdmissionController@scholarshipform']);
+
+
 Route::get('/campus', ['as' => 'campus', 'uses' => 'App\Http\Controllers\Website\CampusController@campus']);
+Route::post('/featured', ['as' => 'featured', 'uses' => 'App\Http\Controllers\Website\CampusController@featured']);
+Route::post('/trending', ['as' => 'trending', 'uses' => 'App\Http\Controllers\Website\CampusController@trending']);
+Route::post('/popularity', ['as' => 'popularity', 'uses' => 'App\Http\Controllers\Website\CampusController@popularity']);
+Route::post('/all', ['as' => 'all', 'uses' => 'App\Http\Controllers\Website\CampusController@all']);
+
+
+
 Route::get('/achiever', ['as' => 'achiever', 'uses' => 'App\Http\Controllers\Website\AchieversController@achiever']);
 Route::get('/courses', ['as' => 'courses', 'uses' => 'App\Http\Controllers\Website\CourseController@courses']);
 Route::get('/engineering', ['as' => 'engg', 'uses' => 'App\Http\Controllers\Website\CourseController@engg']);
 Route::get('/medical', ['as' => 'medical', 'uses' => 'App\Http\Controllers\Website\CourseController@medical']);
 Route::get('/science', ['as' => 'science', 'uses' => 'App\Http\Controllers\Website\CourseController@science']);
+Route::post('/registration', ['as' => 'registration', 'uses' => 'App\Http\Controllers\Website\AdmissionController@registrationOfAdmission']);
 
+Route::get('/trending', ['as' => 'trending', 'uses' => 'App\Http\Controllers\Website\ContactController@trending']);
 
 //-------------------------------------Admin---------------------------------//
 
@@ -60,7 +72,90 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::post('/website-contact', ['as' => 'website-contact', 'uses' => 'App\Http\Controllers\Admin\LoginRegister\RegisterController@updateProfile']);
 
+    Route::get('/list-course-details', ['as' => 'list-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@index']);
+    Route::get('/add-course-details', ['as' => 'add-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@add']);
+    Route::post('/add-course-details', ['as' => 'add-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@store']);
+    Route::get('/edit-course-details/{edit_id}', ['as' => 'edit-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@edit']);
+    Route::post('/update-course-details', ['as' => 'update-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@update']);
+    Route::post('/show-course-details', ['as' => 'show-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@show']);
+    Route::post('/delete-course-details', ['as' => 'delete-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@destroy']);
+    Route::post('/update-active-course-details', ['as' => 'update-active-course-details', 'uses' => 'App\Http\Controllers\Admin\Home\CourseDetailsController@updateOne']);
 
+
+    Route::get('/list-courses', ['as' => 'list-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@index']);
+    Route::get('/add-courses', ['as' => 'add-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@add']);
+    Route::post('/add-courses', ['as' => 'add-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@store']);
+    Route::get('/edit-courses/{edit_id}', ['as' => 'edit-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@edit']);
+    Route::post('/update-courses', ['as' => 'update-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@update']);
+    Route::post('/show-courses', ['as' => 'show-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@show']);
+    Route::post('/delete-courses', ['as' => 'delete-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@destroy']);
+    Route::post('/update-active-courses', ['as' => 'update-active-courses', 'uses' => 'App\Http\Controllers\Admin\Master\CourseController@updateOne']);
+
+
+    Route::get('/list-registration', ['as' => 'list-registration', 'uses' => 'App\Http\Controllers\Admin\ContactUs\RegistrationController@index']);
+
+    Route::get('/list-campus', ['as' => 'list-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@index']);
+    Route::get('/add-campus', ['as' => 'add-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@add']);
+    Route::post('/add-campus', ['as' => 'add-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@store']);
+    Route::get('/edit-campus/{edit_id}', ['as' => 'edit-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@edit']);
+    Route::post('/update-campus', ['as' => 'update-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@update']);
+    Route::post('/show-campus', ['as' => 'show-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@show']);
+    Route::post('/delete-campus', ['as' => 'delete-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@destroy']);
+    Route::post('/update-active-campus', ['as' => 'update-active-campus', 'uses' => 'App\Http\Controllers\Admin\Campus\CampusController@updateOne']);
+    
+
+    Route::get('/list-achievers', ['as' => 'list-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@index']);
+    Route::get('/add-achievers', ['as' => 'add-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@add']);
+    Route::post('/add-achievers', ['as' => 'add-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@store']);
+    Route::get('/edit-achievers/{edit_id}', ['as' => 'edit-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@edit']);
+    Route::post('/update-achievers', ['as' => 'update-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@update']);
+    Route::post('/show-achievers', ['as' => 'show-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@show']);
+    Route::post('/delete-achievers', ['as' => 'delete-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@destroy']);
+    Route::post('/update-one-achievers', ['as' => 'update-one-achievers', 'uses' => 'App\Http\Controllers\Admin\Campus\AchieversController@updateOne']);
+
+// ==============Slider============
+    Route::get('/list-slide', ['as' => 'list-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@index']);
+    Route::get('/add-slide', ['as' => 'add-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@add']);
+    Route::post('/add-slide', ['as' => 'add-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@store']);
+    Route::get('/edit-slide/{edit_id}', ['as' => 'edit-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@edit']);
+    Route::post('/update-slide', ['as' => 'update-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@update']);
+    Route::post('/show-slide', ['as' => 'show-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@show']);
+    Route::post('/delete-slide', ['as' => 'delete-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@destroy']);
+    Route::post('/update-active-slide', ['as' => 'update-active-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@updateOne']);
+
+
+
+    Route::get('/list-comitee-details', ['as' => 'list-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@index']);
+    Route::get('/add-comitee-details', ['as' => 'add-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@add']);
+    Route::post('/add-comitee-details', ['as' => 'add-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@store']);
+    Route::get('/edit-service-details/{edit_id}', ['as' => 'edit-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@edit']);
+    Route::post('/update-comitee-details', ['as' => 'update-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@update']);
+    Route::post('/show-comitee-details', ['as' => 'show-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@show']);
+    Route::post('/delete-comitee-details', ['as' => 'delete-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@destroy']);
+    Route::post('/update-active-comitee-details', ['as' => 'update-active-comitee-details', 'uses' => 'App\Http\Controllers\Admin\Master\ComiteeDetailsController@updateOne']);
+
+
+// List of route contact details
+    Route::get('/edit-website-contact-details', ['as' => 'edit-website-contact-details', 'uses' => 'App\Http\Controllers\Admin\WebsiteContactDetailsController@edit']);
+    Route::post('/update-website-contact', ['as' => 'update-website-contact', 'uses' => 'App\Http\Controllers\Admin\WebsiteContactDetailsController@update']);
+
+
+// ==============Gallery============
+    Route::get('/list-gallery', ['as' => 'list-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@index']);
+    Route::get('/add-gallery', ['as' => 'add-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@add']);
+    Route::post('/add-gallery', ['as' => 'add-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@store']);
+    Route::get('/edit-gallery/{edit_id}', ['as' => 'edit-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@edit']);
+    Route::post('/update-gallery', ['as' => 'update-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@update']);
+    Route::post('/show-gallery', ['as' => 'show-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@show']);
+    Route::post('/delete-gallery', ['as' => 'delete-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@destroy']);
+    Route::post('/update-active-gallery', ['as' => 'update-active-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@updateOne']);
+    
+ // ===============Subscriber 
+    Route::post('/subscriber', ['as' => 'subscriber', 'uses' => 'App\Http\Controllers\Website\IndexController@subscriber']);
+     Route::get('/list-subscribers', ['as' => 'list-subscribers', 'uses' => 'App\Http\Controllers\Admin\ContactUs\AboutUsContactUsListController@index']);
+    // Route::post('/show-list-subscribers', ['as' => 'list-subscribers', 'uses' => 'App\Http\Controllers\Admin\ContactUs\AboutUsContactUsListController@show']);
+    Route::post('/delete-list-subscribers', ['as' => 'delete-list-subscribers', 'uses' => 'App\Http\Controllers\Admin\ContactUs\AboutUsContactUsListController@destroy']);
+//---------------------------Dashboard------------------------------//
     // Route::get('/list-resource', ['as' => 'list-resource', 'uses' => 'App\Http\Controllers\Admin\Master\ResourceController@index']);
     // Route::get('/add-resource', ['as' => 'add-resource', 'uses' => 'App\Http\Controllers\Admin\Master\ResourceController@add']);
     // Route::post('/add-resource', ['as' => 'add-resource', 'uses' => 'App\Http\Controllers\Admin\Master\ResourceController@store']);
@@ -79,30 +174,9 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/delete-solution', ['as' => 'delete-solution', 'uses' => 'App\Http\Controllers\Admin\Master\SolutionController@destroy']);
     Route::post('/update-one-solution', ['as' => 'update-one-solution', 'uses' => 'App\Http\Controllers\Admin\Master\SolutionController@updateOne']);
     
-    // ==============Slider============
-    Route::get('/list-slide', ['as' => 'list-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@index']);
-    Route::get('/add-slide', ['as' => 'add-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@add']);
-    Route::post('/add-slide', ['as' => 'add-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@store']);
-    Route::get('/edit-slide/{edit_id}', ['as' => 'edit-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@edit']);
-    Route::post('/update-slide', ['as' => 'update-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@update']);
-    Route::post('/show-slide', ['as' => 'show-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@show']);
-    Route::post('/delete-slide', ['as' => 'delete-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@destroy']);
-    Route::post('/update-active-slide', ['as' => 'update-active-slide', 'uses' => 'App\Http\Controllers\Admin\Home\SliderController@updateOne']);
     
-
-    Route::get('/list-service-details', ['as' => 'list-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@index']);
-    Route::get('/add-service-details', ['as' => 'add-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@add']);
-    Route::post('/add-service-details', ['as' => 'add-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@store']);
-    Route::get('/edit-service-details/{edit_id}', ['as' => 'edit-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@edit']);
-    Route::post('/update-service-details', ['as' => 'update-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@update']);
-    Route::post('/show-service-details', ['as' => 'show-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@show']);
-    Route::post('/delete-service-details', ['as' => 'delete-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@destroy']);
-    Route::post('/update-active-service-details', ['as' => 'update-active-service-details', 'uses' => 'App\Http\Controllers\Admin\Master\ServiceDetailsController@updateOne']);
-
-
-    // List of route contact details
-    Route::get('/edit-website-contact-details', ['as' => 'edit-website-contact-details', 'uses' => 'App\Http\Controllers\Admin\WebsiteContactDetailsController@edit']);
-    Route::post('/update-website-contact', ['as' => 'update-website-contact', 'uses' => 'App\Http\Controllers\Admin\WebsiteContactDetailsController@update']);
+    
+    
 
 
 
@@ -114,16 +188,6 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/show-our-solutions', ['as' => 'show-our-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\OurSolutionsController@show']);
     Route::post('/delete-our-solutions', ['as' => 'delete-our-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\OurSolutionsController@destroy']);
     Route::post('/update-active-our-solutions', ['as' => 'update-active-our-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\OurSolutionsController@updateOne']);
-
-
-    Route::get('/list-services', ['as' => 'list-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@index']);
-    Route::get('/add-services', ['as' => 'add-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@add']);
-    Route::post('/add-services', ['as' => 'add-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@store']);
-    Route::get('/edit-services/{edit_id}', ['as' => 'edit-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@edit']);
-    Route::post('/update-services', ['as' => 'update-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@update']);
-    Route::post('/show-services', ['as' => 'show-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@show']);
-    Route::post('/delete-services', ['as' => 'delete-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@destroy']);
-    Route::post('/update-active-services', ['as' => 'update-active-services', 'uses' => 'App\Http\Controllers\Admin\Master\ServicesMasterController@updateOne']);
 
 
 
@@ -147,15 +211,7 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/update-active-resource-and-insights', ['as' => 'update-active-resource-and-insights', 'uses' => 'App\Http\Controllers\Admin\Home\ResourcesAndInsightsController@updateOne']);
 
 
-    Route::get('/list-additional-solutions', ['as' => 'list-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@index']);
-    Route::get('/add-additional-solutions', ['as' => 'add-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@add']);
-    Route::post('/add-additional-solutions', ['as' => 'add-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@store']);
-    Route::get('/edit-additional-solutions/{edit_id}', ['as' => 'edit-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@edit']);
-    Route::post('/update-additional-solutions', ['as' => 'update-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@update']);
-    Route::post('/show-additional-solutions', ['as' => 'show-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@show']);
-    Route::post('/delete-additional-solutions', ['as' => 'delete-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@destroy']);
-    Route::post('/update-active-additional-solutions', ['as' => 'update-active-additional-solutions', 'uses' => 'App\Http\Controllers\Admin\Home\AdditionalSolutionsController@updateOne']);
-
+    
 
     // ============Marquee=============
     Route::get('/list-marquee-tab', ['as' => 'list-marquee-tab', 'uses' => 'App\Http\Controllers\Admin\Master\MarqueeTabController@index']);
@@ -178,21 +234,9 @@ Route::group(['middleware' => ['admin']], function () {
     Route::post('/update-one_marquee', ['as' => 'update-one_marquee', 'uses' => 'App\Http\Controllers\Admin\Home\MarqueeController@updateOne']);
 
 
-    // ==============Gallery============
-    Route::get('/list-gallery', ['as' => 'list-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@index']);
-    Route::get('/add-gallery', ['as' => 'add-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@add']);
-    Route::post('/add-gallery', ['as' => 'add-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@store']);
-    Route::get('/edit-gallery/{edit_id}', ['as' => 'edit-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@edit']);
-    Route::post('/update-gallery', ['as' => 'update-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@update']);
-    Route::post('/show-gallery', ['as' => 'show-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@show']);
-    Route::post('/delete-gallery', ['as' => 'delete-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@destroy']);
-    Route::post('/update-active-gallery', ['as' => 'update-active-gallery', 'uses' => 'App\Http\Controllers\Admin\Gallery\GalleryController@updateOne']);
     
 
-
-    // ===============Subscriber 
-    Route::get('/list-subscriber', ['as' => 'list-subscriber', 'uses' => 'App\Http\Controllers\Admin\ContactUs\SubscriberController@index']);
-
+   
     // ===============Contact 
     Route::get('/list-contactus-form', ['as' => 'list-contactus-form', 'uses' => 'App\Http\Controllers\Admin\ContactUs\ContactUsListController@index']);
     Route::post('/show-contactus-form', ['as' => 'show-contactus-form', 'uses' => 'App\Http\Controllers\Admin\ContactUs\ContactUsListController@show']);
@@ -200,9 +244,7 @@ Route::group(['middleware' => ['admin']], function () {
 
 
     // Contact From About US
-    Route::get('/list-about-us-contactus', ['as' => 'list-about-us-contactus', 'uses' => 'App\Http\Controllers\Admin\ContactUs\AboutUsContactUsListController@index']);
-    Route::post('/show-about-us-contactus', ['as' => 'show-about-us-contactus', 'uses' => 'App\Http\Controllers\Admin\ContactUs\AboutUsContactUsListController@show']);
-    Route::post('/delete-about-us-contactus', ['as' => 'delete-about-us-contactus', 'uses' => 'App\Http\Controllers\Admin\ContactUs\AboutUsContactUsListController@destroy']);
+   
 
     Route::get('/db-backup', ['as' => 'db-backup', 'uses' => 'App\Http\Controllers\DBBackup\DBBackupController@downloadBackup']);
     Route::get('/log-out', ['as' => 'log-out', 'uses' => 'App\Http\Controllers\Admin\LoginRegister\LoginController@logout']);

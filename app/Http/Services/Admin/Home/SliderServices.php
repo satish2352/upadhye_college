@@ -118,6 +118,7 @@ public function addAll($request)
     {
         try {
             $delete = $this->repo->deleteById($id);
+            // dd($delete);
             if ($delete) {
                 return ['status' => 'success', 'msg' => 'Deleted Successfully.'];
             } else {

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('services_masters', function (Blueprint $table) {
+        Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('service_name');
             $table->boolean('is_active')->default(true);
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('services_masters');
+        Schema::dropIfExists('courses');
     }
 };
